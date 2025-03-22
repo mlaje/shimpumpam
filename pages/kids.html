@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Título de la página -->
+        <title>
+            Shimpumpam
+        </title>    
+
+        <!-- Hoja de estilo -->
+        <link rel="stylesheet" href="../assets/css/style.css">    
+        
+        <!-- Fonts Fredoka y Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- Icono de la página -->
+        <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <!-- Banner superior de navegación superior -->
+            <div class="top-banner">
+                <p>ENVÍOS GRATIS CON COMPRAS SUPERIORES A $XX.XXX</p>
+            </div>
+
+            <!-- Barra de navegación superior -->
+            <nav class="barra-superior">
+                <a href="../index.html">
+                    <!-- Logo de la empresa  -->
+                    <img src="../assets/img/logoshimpumpam.png" alt="Logo de la Empresa" id="logo">
+                </a>
+
+                <img src="../assets/img/ayuda.png" alt="Ayuda" id="ayuda">
+                <img src="../assets/img/user_icon.png" alt="Icono del Usuario" id="user">
+                <img src="../assets/img/cart.png" alt="Carrito" id="carrito">
+
+            </nav>
+        </header>
+        
+        <main>
+            <!-- Imágenes link a login, carrito y ayuda-->
+            <!-- Buscador de productos -->
+            <br>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar producto..." class="rounded-input">
+                <button id="search-button" class="search-button">
+                    Buscar Producto               
+                </button>
+            </div>
+            <br>
+
+            <!-- Banner -->
+            <img src="../assets/img/banner.JPG" alt="Banner"  id="banner">
+
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <a href="babies.html">Babies</a>
+                <a href="#">Kids</a>
+                <a href="mayorista.html">Mayorista</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            
+            <!-- Títulos -->            
+            <h1>
+                Ropa para Chicos
+            </h1>
+
+            <nav class="temporada">
+                <a href="#">Verano</a>
+                <br>
+                <a href="#">Invierno</a>
+            </form>
+            
+
+            <div class="filtroPrecio">
+                <h3>
+                    Filtrar por Precio
+                </h3>            
+                <input type="text" id="precioDesde" name="precio-desde" placeholder="$ Desde">            
+                <input type="text" id="precioHasta" name="precio-hasta" placeholder="$ Hasta">
+                <button type="submit" id="filtrarPrecio">Filtrar</button>
+            </div>
+            
+            <!-- Lista de productos: SE VE FEO, SE MEJORARÁ CUANDO USEMOS FLEXBOX -->
+            <section>
+                <img src="../assets/img/previous.png" alt="producto_anterior" id="producto_anterior">
+
+                <img src="../assets/img/productokids1.jpg" alt="productokids1" id="productokids1">
+                <p>
+                    CAMPERA LEO- Lino elastizado
+                    $35.000
+                    $31.500 con Transferencia o Depósito
+                    3 cuotas sin interés de $11.666,67
+                </p>
+                <button class="botonCompra" id="comprar_productokids1">Comprar</button>
+                <button class="botonCompra" id="ver_productokids1">Ver</button>
+
+                <img src="../assets/img/productokids2.jpg" alt="productokids2" id="productokids2">
+                <p>
+                    PANTALON ORION- Jean Azul
+                    $27.500
+                    $24.750 con Transferencia o Depósito
+                    3 cuotas sin interés de $9.166,67
+                </p>
+                <button class="botonCompra" id="comprar_productokids2">Comprar</button>
+                <button class="botonCompra" id="ver_productokids2">Ver</button>
+
+                <img src="../assets/img/productokids3.jpg" alt="productokids3" id="productokids3">            
+                <p>
+                    SHORT ESCORPIO-Joggjean
+                    $16.000
+                    $14.400 con Transferencia o Depósito
+                    3 cuotas sin interés de $5.333,33
+                </p>
+                <button class="botonCompra" id="comprar_productokids3">Comprar</button>
+                <button class="botonCompra" id="ver_productokids3">Ver</button>
+
+                <!--<img src="../assets/img/productokids4.jpg" alt="productokids4" id="productokids4"> -->
+                <img src="../assets/img/next.png" alt="producto_siguiente" id="producto_siguiente">
+            </section>
+            <!-- Mostrar más con la idea de ir recargando de productos la página a medida que se scrollea -->
+            <br>
+            <br>
+            <br>
+            <button class="mostrarMas">
+                Mostrar Más               
+            </button>
+        </main>
+
+        <footer>
+            <p class="copyright">
+                Copyright Shimpumpam - 2025. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos ingresá acá. / Botón de arrepentimiento
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,303 @@
+#logo {
+    width: 300px;  
+    height: auto;       
+}
+
+/* Estilo para el banner de aviso superior */
+.top-banner {
+    background-color: rgb(255, 112, 166);               /* Color de fondo del banner */
+    color: white;                                       /* Color del texto */
+    text-align: center;                                   /* Centrar el texto */
+    padding: 9px 0;                                       /* Espaciado en el interior (ajustado) */
+    font-size: 12px;                                      /* Tamaño del texto */
+    position: fixed;                                      /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;                                          /* Ancho completo */
+    z-index: 1000;                                        /* Asegura que el banner esté por encima del contenido */
+    margin-bottom: 0;                                     /* Eliminar margen inferior */
+}
+
+
+/* Eliminar margen del body para que el contenido no quede tapado */
+body {
+    margin-top: 60px;                                   /* Ajusta el margen superior para que el contenido no se tape */
+    padding-top: 0;                                     /* Eliminar padding superior */
+}
+
+/* Estilo para la barra superior */
+.barra-superior {
+    background-color: rgb(255, 151, 112); 
+    width: 100%; 
+    height: 100px;                                      /* Mantener altura de la barra */
+    position: fixed;                                    /* Fijar la barra */
+    top: 60px;                                          /* Esto pone la barra justo debajo del top-banner */
+    left: 0; 
+    z-index: 999;                                       /* Aseguramos que esté debajo del top-banner */
+    margin-top: 0;                                      /* Eliminar cualquier margen superior */
+}
+
+
+h1 {
+    text-align: center;
+    font-family: "Fredoka", serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Fredoka", serif;
+    color: rgb(255, 151, 112);    
+}
+
+.menu {
+    text-align: center; 
+    background-color: rgb(255, 151, 112) ; 
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 20px;
+    margin: 0 15px; 
+    font-size: 30px; 
+    font-family: "Fredoka", serif;
+    display: inline-block; 
+}
+
+.menu a:hover {
+    background-color:rgb(255, 174, 139);  /* Cambia el fondo al pasar el mouse */
+}
+
+
+.temporada a {
+    color: rgb(255, 151, 112);
+    text-decoration: none;    
+    font-family: "Fredoka", serif;
+    font-size: 20px;
+}
+
+.rounded-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;                    /* bordes sean redondeados */
+    border: 1px solid #ccc;               /* Un borde suave de color gris */
+}
+
+.search-button {
+    color: white;
+    width: 150px; 
+    height: 40px; 
+    font-size: 16px;
+    background-color:  rgb(255, 151, 112) ;
+    font-family:"Fredoka", serif;
+}
+
+
+table {
+    width: 50%;
+    border-collapse: collapse;              /* Elimina los espacios entre las celdas */
+    margin: 20px auto;
+    font-family: "Fredoka", serif;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: rgb(255, 151, 112); 
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd; 
+    font-size: 14px;
+}
+
+/* Intercalado de colores en las filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;              /* Gris claro para filas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;              /* Blanco para filas impares */
+}
+
+
+/* Efecto al pasar el mouse sobre las filas */
+tr:hover {
+    background-color: #ddd;                 /* Gris más oscuro cuando el mouse pasa por encima */
+}
+
+/* Borde alrededor de la tabla */
+table {
+    border: 2px solid #4CAF50;              /* Borde verde alrededor de la tabla */
+    border-radius: 8px;                       /* Bordes redondeados */
+    overflow: hidden; 
+}
+
+/* Estilo para las celdas con los precios 
+td:nth-child(2) {
+    text-align: right;Centrado a la derecha para los precios 
+}
+*/
+
+
+/* Establecer un ancho para la tercera columna */
+td:nth-child(3) {
+    width: 50px;                                /* Establece un ancho fijo para la columna de "Unidades" */
+}
+
+#formContacto {
+    width: 40%;                                 /* Ajusta el ancho del formulario */
+    margin: 40px auto;                          /* Centra el formulario */
+    padding: 20px;
+    background-color: #f9f9f9;                /* Color de fondo del formulario */
+    border-radius: 8px;                         /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+    font-family: "Fredoka", serif; 
+}
+
+
+#formNewsletter {
+    width: 40%;                                  /* Ajusta el ancho del formulario */
+    margin: 40px auto;                           /* Centra el formulario */
+    padding: 20px;
+    background-color: #f9f9f9;                 /* Color de fondo del formulario */
+    border-radius: 8px;                          /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor */
+    font-family: "Fredoka", serif; 
+}
+
+#formContacto input[type="text"], 
+#formContacto textarea, 
+#formContacto input[type="submit"] {
+    width: 80%;
+    padding: 10px;                                /* Añade un poco de relleno para hacerlo más fácil de escribir */
+    margin-bottom: 10px;                          /* Añade espacio entre los campos */
+    margin-left: 10%;                             /* Centra los elementos con respecto al formulario */
+    box-sizing: border-box;                       /* Asegura que el padding no afecte el ancho */
+}
+
+
+#formNewsletter input[type="text"], 
+#formNewsletter input[type="submit"] {
+    width: 80%;
+    padding: 10px;                                 /* Añade un poco de relleno para hacerlo más fácil de escribir */
+    margin-bottom: 10px;                           /* Añade espacio entre los campos */
+    margin-left: 10%;                              /* Centra los elementos con respecto al formulario */
+    box-sizing: border-box;                        /* Asegura que el padding no afecte el ancho */
+}
+
+#formContacto input[type="submit"] {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color:  rgb(255, 151, 112);        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+}
+
+
+#formNewsletter input[type="submit"] {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color:  rgb(255, 151, 112);        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+}
+
+
+
+#formContacto input[type="submit"]:hover {
+    background-color: rgb(255, 174, 139);         /* Cambia el color de fondo cuando el botón es presionado */
+}
+
+
+#filtrarPrecio {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color:  rgb(255, 151, 112);        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+    font-size: 16px;
+    padding: 10px; 
+    margin-bottom: 10px;
+}
+
+/*
+#precioDesde, #precioHasta {
+    width: 70px;
+    height: 30px;    
+    font-family: "Fredoka", serif; 
+    font-size: 16px;
+}
+*/
+
+
+.filtroPrecio input[type="text"] {
+    width: 70px;
+    height: 30px;    
+    font-family: "Fredoka", serif; 
+    font-size: 16px;
+}
+
+.mostrarMas, .botonCompra {
+    width: 110px;
+    height: 30px;    
+    font-family: "Fredoka", serif; 
+    font-size: 16px;
+    background-color: rgb(255, 151, 112);       
+    color: white;
+    text-align: center;                            
+    margin: 0 auto;   
+}
+
+label {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    width: 200px;
+}
+
+p {
+    font-family: "Montserrat", serif;
+}
+
+footer {
+    background-color: #f1f1f1; 
+    padding: 20px 0; 
+    text-align: left; 
+    font-family: "Montserrat", serif;
+    color: black; 
+}
+
+footer p {
+    margin: 10px 0; 
+}
+
+#correo {
+    width: 100px;
+    height: 50px;
+} 
+
+.copyright {
+    text-align: center;                             /* Centra el texto */
+    background-color: rgb(255, 151, 112);         /* Cambia el color de fondo */
+    padding: 5px 0;                                 /* Añade un poco de espacio en el interior */
+    color: white;                                 /* Cambia el color del texto a blanco */
+    font-size: 14px;                                /* Establece un tamaño de fuente adecuado */
+}
+
+.newsletter {
+    text-align: center;
+}
