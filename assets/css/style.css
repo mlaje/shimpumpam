@@ -20,7 +20,7 @@
 }
 
 .middle-header {
-    display: flex;
+    display: flex;                                          /* Uso de flex */
     background-color: rgb(255, 151, 112); 
     justify-content: space-between;
     width: 100%;     
@@ -101,28 +101,6 @@ nav ul {
 }
 
 
-h1, h2, h3 {
-    font-family: "Fredoka", serif; /* Mantiene la fuente personalizada */
-    font-weight: bold; /* Recupera el estilo en negrita */
-    text-align: center; /* Centrado */
-    margin: 20px 0; /* Ajuste del margen */
-}
-
-h1 {
-    font-size: 2.5rem; /* Ajusta el tamaño según el diseño */
-}
-
-h2 {
-    font-size: 2rem;
-    color: rgb(255, 151, 112); /* Mantiene el color personalizado */
-}
-
-h3 {
-    font-size: 1.5rem;
-    color: rgb(255, 151, 112); /* Mantiene el color personalizado */
-    text-align: left;
-    font-weight: normal;
-}
 
 
 
@@ -360,3 +338,24 @@ span {
     text-align: center;
 }
 
+h1, h2, h3 {
+    font-family: "Fredoka", serif;      /* Mantiene la fuente personalizada */
+    font-weight: bold;                  /* Recupera el estilo en negrita */
+    text-align: center;                 /* Centrado */
+    margin: 20px 0;                     /* Ajuste del margen */
+    color: rgb(255, 151, 112); 
+}
+
+h1 {
+    font-size: 2.5rem;                  /* Ajusta el tamaño según el diseño */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: normal;
+}
