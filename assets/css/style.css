@@ -133,53 +133,6 @@ h2 {
     font-family:"Fredoka", serif;
 }
 
-
-table {
-    width: 50%;
-    border-collapse: collapse;              /* Elimina los espacios entre las celdas */
-    margin: 20px auto;
-    font-family: "Fredoka", serif;
-}
-
-/* Estilo para los encabezados de la tabla */
-th {
-    background-color: rgb(255, 151, 112); 
-    color: white;
-    padding: 12px;
-    text-align: center;
-    font-size: 16px;
-    border: 1px solid #ddd;
-}
-
-td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd; 
-    font-size: 14px;
-}
-
-/* Intercalado de colores en las filas */
-tr:nth-child(even) {
-    background-color: #f2f2f2;              /* Gris claro para filas pares */
-}
-
-tr:nth-child(odd) {
-    background-color: #ffffff;              /* Blanco para filas impares */
-}
-
-
-/* Efecto al pasar el mouse sobre las filas */
-tr:hover {
-    background-color: #ddd;                 /* Gris más oscuro cuando el mouse pasa por encima */
-}
-
-/* Borde alrededor de la tabla */
-table {
-    border: 2px solid #4CAF50;              /* Borde verde alrededor de la tabla */
-    border-radius: 8px;                       /* Bordes redondeados */
-    overflow: hidden; 
-}
-
 /* Estilo para las celdas con los precios 
 td:nth-child(2) {
     text-align: right;Centrado a la derecha para los precios 
@@ -188,9 +141,7 @@ td:nth-child(2) {
 
 
 /* Establecer un ancho para la tercera columna */
-td:nth-child(3) {
-    width: 50px;                                /* Establece un ancho fijo para la columna de "Unidades" */
-}
+
 
 #formContacto {
     width: 40%;                                 /* Ajusta el ancho del formulario */
@@ -341,3 +292,57 @@ footer p {
 .newsletter {
     text-align: center;
 }
+
+
+.productos {
+    width: 40%;
+    margin: auto; 
+    font-family: "Fredoka", serif;
+}
+
+.producto-header, .producto {
+    display: grid;                                              /* USO DE CSS GRID */    
+    grid-template-columns: 1fr 1fr 1fr;                         /* 3 columnas */
+    gap: 10px;
+    padding: 10px;
+    text-align: left;   
+}
+
+.producto-header {
+    font-weight: bold;
+    background-color: rgb(255, 151, 112); 
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.producto {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    border: 1px solid #f2f2f2; 
+}
+
+span {
+    padding: 5px;
+}
+
+/* Filas alternas */
+.producto:nth-child(even) {
+    background-color: #f2f2f2; /* Gris claro para filas pares */
+}
+
+.producto:nth-child(odd) {
+    background-color: #ffffff; /* Blanco para filas impares */
+}
+
+/* Efecto hover */
+.producto:hover {
+    background-color: #ddd; /* Gris más oscuro cuando el mouse pasa por encima */
+}
+
+.minimo, .precio {
+    text-align: center;
+}
+
+
+
