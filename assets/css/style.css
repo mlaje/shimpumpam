@@ -1,61 +1,92 @@
-#logo {
-    width: 300px;  
-    height: auto;       
+.top-banner,
+.middle-header,
+.banner,
+.menunavegacionprincipal {
+    width: 100%;                                            /* Asegura que todas ocupen el ancho completo */
+    box-sizing: border-box;                                 /* Evita problemas con el padding y width */
+    margin: 0;
+    padding: 0;
 }
+
 
 /* Estilo para el banner de aviso superior */
 .top-banner {
     background-color: rgb(255, 112, 166);               /* Color de fondo del banner */
     color: white;                                       /* Color del texto */
     text-align: center;                                   /* Centrar el texto */
-    padding: 9px 0;                                       /* Espaciado en el interior (ajustado) */
     font-size: 12px;                                      /* Tamaño del texto */
-    position: fixed;                                      /* Fijo en la parte superior */
-    top: 0;
-    left: 0;
     width: 100%;                                          /* Ancho completo */
-    z-index: 1000;                                        /* Asegura que el banner esté por encima del contenido */
-    margin-bottom: 0;                                     /* Eliminar margen inferior */
+    padding: 10px;
 }
 
-
-/* Eliminar margen del body para que el contenido no quede tapado */
-body {
-    margin-top: 60px;                                   /* Ajusta el margen superior para que el contenido no se tape */
-    padding-top: 0;                                     /* Eliminar padding superior */
-}
-
-/* Estilo para la barra superior */
-.barra-superior {
+.middle-header {
+    display: flex;
     background-color: rgb(255, 151, 112); 
+    justify-content: space-between;
+    width: 100%;     
+}
+
+.logo {
+    width: 300px;  
+    height: auto;       
+    vertical-align: center;
+}
+
+/* Estilo para la barra de navegacion */
+.barra-navegacion {   
     width: 100%; 
-    height: 100px;                                      /* Mantener altura de la barra */
-    position: fixed;                                    /* Fijar la barra */
-    top: 60px;                                          /* Esto pone la barra justo debajo del top-banner */
-    left: 0; 
-    z-index: 999;                                       /* Aseguramos que esté debajo del top-banner */
-    margin-top: 0;                                      /* Eliminar cualquier margen superior */
+   /* height: 100px;   */                                   /* Mantener altura de la barra */
+   /* position: fixed; */                                    /* Fijar la barra */
+   /* margin-top: 0;  */                                     /* Eliminar cualquier margen superior */
+   /* left: 0; */
+}
+
+.barra-navegacion ul {
+    display: flex; /* Hace que los elementos de la lista se alineen en fila */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: right; /* Distribuye los elementos uniformemente */
+    list-style: none; /* Elimina los bullets */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block; /* Evita espacios en blanco */
 }
 
 
-h1 {
-    text-align: center;
-    font-family: "Fredoka", serif;
-}
-
-h2 {
-    text-align: center;
-    font-family: "Fredoka", serif;
-    color: rgb(255, 151, 112);    
-}
-
-.menu {
+.menunavegacionprincipal {
     text-align: center; 
     background-color: rgb(255, 151, 112) ; 
 }
 
+.menunavegacionprincipal ul {
+    display: flex;  /* Hace que los <li> estén en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 0;
+    margin: 0;
+}
 
-.menu a {
+.menunavegacionprincipal ul li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+.menunavegacionprincipal a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: "Fredoka", serif;
+    display: inline-block; /* Asegura que los enlaces se muestren correctamente */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menunavegacionprincipal a {
     color: white;
     text-decoration: none; 
     padding: 10px 20px;
@@ -65,9 +96,18 @@ h2 {
     display: inline-block; 
 }
 
-.menu a:hover {
-    background-color:rgb(255, 174, 139);  /* Cambia el fondo al pasar el mouse */
+.menunavegacionprincipal a:hover {
+    background-color: rgb(255, 174, 139);  /* Cambia el fondo al pasar el mouse */
 }
+
+h1, h2 {
+    text-align: center;
+    font-family: "Fredoka", serif;
+}
+
+h2 {
+    color: rgb(255, 151, 112);
+}    
 
 
 .temporada a {
