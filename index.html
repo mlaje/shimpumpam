@@ -54,12 +54,12 @@
                             </li>
                             <li>
                                 <!-- Buscador de productos -->
-                                <div class="search-container">
+                                <form class="search-container">
                                     <input type="text" id="search-input" placeholder="Buscar producto..." class="rounded-input">
-                                    <button id="search-button" class="search-button">
+                                    <button type="submit" id="search-button" class="search-button">
                                         Buscar Producto               
                                     </button>
-                                </div>
+                                </form>
                             </li>
                         </ul>
                     </nav>
@@ -123,7 +123,7 @@
                 </p>
 
                 <p>
-                     <!-- Formulario de Newsletter, por el momento no hace nada y manda al index.html -->
+                    <!-- Formulario de Newsletter, por el momento no hace nada y manda al index.html -->
                     <!-- A los efectos de la entrega y facilitar la navegación, cambié el método post original por get -->
                     <form action="#" method="get" id="formNewsletter">
                         <label for="email">Email:</label>
