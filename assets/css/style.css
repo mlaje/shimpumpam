@@ -410,16 +410,16 @@ h3 {
 }
 
 .card .img-wrapper img {
-    width: 100%;                    /* Se ajusta al ancho del contenedor */
-    height: 100%;                   /* Se ajusta al alto del contenedor */
+    width: 100%;                    
+    height: 100%;                   
     object-fit: contain;            /* Mantiene la proporción sin recortar */  
 }
 
 .card-body {
     display: flex;
-    flex-direction: column;         /* Mantiene el título y el texto en columna */
-    align-items: center;            /* Centra el contenido */
-    text-align: center;             /* Asegura que los textos estén centrados */
+    flex-direction: column;         /* título texto en columna */
+    align-items: center;          
+    text-align: center;             
 }
 
 
@@ -520,32 +520,14 @@ h3 {
 
 
 .envioynewsletter {
-	display: grid;
-    grid-template-rows: 100px 200px; 
-	grid-template-areas:
-	"correo email"
-	"correo formemail";
-}
-
-.mediosdeenvio {
-	grid-area: correo;
-}
-
-.registrate {
-    grid-area: email;
-}
-
-.formregistro {
-    grid-area: formemail;
-}
-
-.envioynewsletter {
     display: grid;
-    grid-template-rows: 100px 200px; 
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 15% 85%; 
     grid-template-areas:
         "correo email"
         "correo formemail";
     gap: 10px; /* Espacio entre los elementos */
+    margin: 0 auto;
 }
 
 /* Asignar las áreas de la grilla */
@@ -559,6 +541,7 @@ h3 {
 
 .formregistro {
     grid-area: formemail;
+    
 }
 
 .formregistro form {
@@ -566,7 +549,8 @@ h3 {
     flex-direction: column;     /* Acomoda los elementos en columna */
     align-items: center;        
     text-align: center;        
-    gap: 10px;                  
+    gap: 10px;             
+    max-width: 400px;     
 }
 
 /*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
