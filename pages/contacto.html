@@ -97,37 +97,41 @@
         </header>
         
         <main>
-          
-
-            <!-- Datos de contacto-->
-            <div class="contact-info">
-                <h1>Contacto</h1>
-                <h3>
-                <p>Somos fabricantes. Hacemos ventas minoristas y mayoristas. Para información mayorista pueden escribirnos por correo electrónico o Whatsapp.</p>
-                <p><strong>Whatsapp:</strong> +54911-nnnn-nnnn</p>
-                <p><strong>Email:</strong> <a href="mailto:shimpumpam@gmail.com">shimpumpam@gmail.com</a></p>
-                <p><strong>Showroom:</strong> xxxxxx 1234, CABA, Argentina.</p>
-                </h3>
-            </div>
             
-            <!-- Formulario de Contacto, por el momento no hace nada y manda al index.html -->
-            <!-- A los efectos de la entrega y facilitar la navegación, cambié el método post original por get -->
-            <form action="../index.html" method="get" id="formContacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
+            <h1>Contacto</h1>
+            
+            <section class="contact-section">
+                <!-- Datos de contacto-->
+                <div class="contact-info">
+                    <h3>
+                        <p>Somos fabricantes. Hacemos ventas minoristas y mayoristas. Para información mayorista pueden escribirnos por correo electrónico o Whatsapp.</p>
+                        <p><strong>Whatsapp:</strong> +54911-nnnn-nnnn</p>
+                        <p><strong>Email:</strong> <a href="mailto:shimpumpam@gmail.com">shimpumpam@gmail.com</a></p>
+                        <p><strong>Showroom:</strong> xxxxxx 1234, CABA, Argentina.</p>
+                    </h3>
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
+                <div class="contact-form">
+                    <!-- Formulario de Contacto, por el momento no hace nada y manda al index.html -->
+                    <!-- A los efectos de la entrega y facilitar la navegación, cambié el método post original por get -->
+                    <form action="../index.html" method="get" id="formContacto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
 
-                <label for="telefono">Teléfono:</label>
-                <input type="text" name="telefono" id="telefono">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email">
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje"></textarea>
-                <br>
-                <br>            
-                <input type="submit" value="ENVIAR" id="enviarFormContacto">
-            </form>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" name="telefono" id="telefono">
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                        <br>
+                        <br>            
+                        <input type="submit" value="ENVIAR" id="enviarFormContacto">
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
             <p class="copyright">
