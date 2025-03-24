@@ -314,6 +314,14 @@ footer p {
     border: 1px solid #f2f2f2; 
 }
 
+/* Precios mayoristas en pantallas móviles */
+@media (max-width: 768px) {
+    .productos {
+        width: 90%;                         /* Hace que la tabla ocupe más espacio en móviles */
+    }
+}
+
+
 span {
     padding: 5px;
 }
@@ -581,4 +589,30 @@ h3 {
         width: 100%;                        /* Ocupar el ancho completo */
         text-align: center;                 /* Centrar el texto */
     }
+}
+
+@media (max-width: 768px) {
+    .middle-header {
+        flex-direction: column;         /* Cambia a disposición vertical */
+        align-items: center;            /* Centra los elementos */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .barra-navegacion nav ul {
+        display: flex;
+        flex-direction: row;            /* Íconos en fila */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-container {
+        width: 100%;                    /* Para que el buscador sea más accesible */
+        max-width: 400px;
+    }
+
+    #search-button {
+        display: none;                  /* Oculta el botón en pantallas pequeñas */
+    }
+    
 }
