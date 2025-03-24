@@ -98,8 +98,7 @@
             </div>
         </header>
         
-        <main>
-           
+        <main>         
             
             <!-- Títulos -->            
             <h1>
@@ -107,65 +106,374 @@
             </h1>
 
             <nav class="temporada">
-                <a href="#">Verano</a>
-                <br>
-                <a href="#">Invierno</a>
-            </form>
-            
+                <ul>
+                    <li>
+                        <a href="#">Verano</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Invierno</a>
+                    </li>
+                </ul>
+            </nav>
 
             <div class="filtroPrecio">
                 <h3>
                     Filtrar por Precio
                 </h3>            
-                <input type="text" id="precioDesde" name="precio-desde" placeholder="$ Desde">            
-                <input type="text" id="precioHasta" name="precio-hasta" placeholder="$ Hasta">
-                <button type="submit" id="filtrarPrecio">Filtrar</button>
+                <form action="#" method="get" id="formFiltroPrecio">
+                    <input type="text" id="precioDesde" name="precio-desde" placeholder="$ Desde">            
+                    <input type="text" id="precioHasta" name="precio-hasta" placeholder="$ Hasta">
+                    <button type="submit" id="filtrarPrecio">
+                        Filtrar
+                    </button>
+                </form>
             </div>
             
-            <!-- Lista de productos: SE VE FEO, SE MEJORARÁ CUANDO USEMOS FLEXBOX -->
+            <!-- Carousel de Productos para Chicas y Chicos -->
             <section>
-                <img src="../assets/img/previous.png" alt="producto_anterior" id="producto_anterior">
-
-                <img src="../assets/img/productokids1.jpg" alt="productokids1" id="productokids1">
-                <p>
-                    CAMPERA LEO- Lino elastizado
-                    $35.000
-                    $31.500 con Transferencia o Depósito
-                    3 cuotas sin interés de $11.666,67
-                </p>
-                <button class="botonCompra" id="comprar_productokids1">Comprar</button>
-                <button class="botonCompra" id="ver_productokids1">Ver</button>
-
-                <img src="../assets/img/productokids2.jpg" alt="productokids2" id="productokids2">
-                <p>
-                    PANTALON ORION- Jean Azul
-                    $27.500
-                    $24.750 con Transferencia o Depósito
-                    3 cuotas sin interés de $9.166,67
-                </p>
-                <button class="botonCompra" id="comprar_productokids2">Comprar</button>
-                <button class="botonCompra" id="ver_productokids2">Ver</button>
-
-                <img src="../assets/img/productokids3.jpg" alt="productokids3" id="productokids3">            
-                <p>
-                    SHORT ESCORPIO-Joggjean
-                    $16.000
-                    $14.400 con Transferencia o Depósito
-                    3 cuotas sin interés de $5.333,33
-                </p>
-                <button class="botonCompra" id="comprar_productokids3">Comprar</button>
-                <button class="botonCompra" id="ver_productokids3">Ver</button>
-
-                <!--<img src="../assets/img/productokids4.jpg" alt="productokids4" id="productokids4"> -->
-                <img src="../assets/img/next.png" alt="producto_siguiente" id="producto_siguiente">
+                <div id="carouselkids" class="carousel">
+                    <div class="carousel-inner">
+                        <article>
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids1.jpg" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Campera Leo - Lino 
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $35.000
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $31.500 <span>con Transferencia o Depósito </span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$11.666,67</strong>           
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids6.png" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Chaleco Bronte
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $38.400 
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $34.560 <span>con Transferencia o Depósito </span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$12.800</strong>           
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids2.jpg" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Pantalon Orión Azul
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $27.500 
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $24.750 <span>con Transferencia o Depósito</span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$9.166,67</strong>
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>                            
+                                </div>
+                            </div>                   
+                        </article>
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids7.png" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Campera Rooney
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $37.900 
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $34.110 <span>con Transferencia o Depósito</span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$12.633,33</strong>
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>                            
+                                </div>
+                            </div>        
+                        </article>
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids3.jpg" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Short Escorpio
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $16.000 
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $14.450<span>con Transferencia o Depósito</span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$8.833,33</strong>           
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>    
+                        </article>
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids4.jpg" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Buzito Cuadrillé
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $27.000
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $24.300<span>con Transferencia o Depósito</span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$9.000</strong>           
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>          
+                        </article>
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids9.jpg" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Chaleco Camuflado
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $32.000
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $28.800 <span>con Transferencia o Depósito</span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$10.480</strong>           
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>                        
+                        </article>                                
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids10.jpg" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Enterito Unicornio
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $34.720
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $31.248 <span>con Transferencia o Depósito</span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$11.573,33</strong>           
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>                        
+                        </article>      
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids5.png" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Buzo Walsh
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $38.800 
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $35.920 <span>con Transferencia o Depósito</span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$12.800</strong>           
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>                        
+                        </article>   
+                        <article>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/productokids8.png" class="d-block w-100" alt="..."> 
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Campera Rabito
+                                        </h5>                                
+                                        <p class="precio-original">
+                                            $43.600  
+                                        </p>
+                                        <p class="precio-descuento">
+                                            $39.240 <span>con Transferencia o Depósito</span>
+                                        </p>
+                                        <p class="cuotas">
+                                            3 cuotas sin interés de <strong>$14.533,33</strong>           
+                                        </p>                            
+                                        <div class="boton-container">
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Ver
+                                            </a>
+                                            <a href="#" class="btn btn-primary botonCompra">
+                                                Comprar
+                                            </a>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>                        
+                        </article>                
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselkids" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true">                        
+                        </span>
+                        <span class="visually-hidden">
+                            Previous
+                        </span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselkids" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">                        
+                        </span>
+                        <span class="visually-hidden">
+                            Next
+                        </span>
+                    </button>
+                </div>
             </section>
-            <!-- Mostrar más con la idea de ir recargando de productos la página a medida que se scrollea -->
+            <!-- Carousel de Productos para Chicas y Chicos-->  
+            
+
+
+            <!-- Mostrar más con la idea de ir recargando de productos la página a medida que se scrollea 
             <br>
             <br>
             <br>
             <button class="mostrarMas">
                 Mostrar Más               
             </button>
+            -->
         </main>
 
         <footer>
@@ -173,7 +481,42 @@
                 Copyright Shimpumpam - 2025. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos ingresá acá. / Botón de arrepentimiento
             </p>
         </footer>
+
+        <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+        <!-- Lógica para movimiento del Carousel de Productos para bebés-->        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                let multipleCardCarousel = document.querySelector("#carouselkids");
+            
+                if (window.matchMedia("(min-width: 768px)").matches) {
+                let carousel = new bootstrap.Carousel(multipleCardCarousel, {
+                    interval: false,              // Disable automatic sliding
+                    wrap: false,                  // Prevent wrapping at the end
+                });
+            
+                let carouselWidth = document.querySelector(".carousel-inner").scrollWidth;
+                let cardWidth = document.querySelector(".carousel-item").offsetWidth;
+                let scrollPosition = 0;
+            
+                document.querySelector("#carouselkids .carousel-control-next").addEventListener("click", function () {
+                    if (scrollPosition < carouselWidth - cardWidth * 4) {
+                        scrollPosition += cardWidth;
+                    document.querySelector("#carouselkids .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
+                    }
+                });
+            
+                document.querySelector("#carouselkids .carousel-control-prev").addEventListener("click", function () {
+                    if (scrollPosition > 0) {
+                        scrollPosition -= cardWidth;
+                    document.querySelector("#carouselkids .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
+                    }
+                });
+                } else {
+                    multipleCardCarousel.classList.add("slide");
+                }
+            });
+        </script>
     </body>
 </html>
