@@ -139,7 +139,7 @@ nav ul {
 }
 
 #formNewsletter {
-    width: 40%;                                  /* Ajusta el ancho del formulario */
+    width: 90%;                                  /* Ajusta el ancho del formulario */
     margin: 40px auto;                           /* Centra el formulario */
     padding: 20px;
     background-color: #f9f9f9;                 /* Color de fondo del formulario */
@@ -515,5 +515,72 @@ h3 {
     /* Ajuste de ancho del formulario en móviles */
     .contact-section .contact-form form {
         max-width: 100%;                /* Permitir que se expanda en pantallas pequeñas */
+    }
+}
+
+
+.envioynewsletter {
+	display: grid;
+    grid-template-rows: 100px 200px; 
+	grid-template-areas:
+	"correo email"
+	"correo formemail";
+}
+
+.mediosdeenvio {
+	grid-area: correo;
+}
+
+.registrate {
+    grid-area: email;
+}
+
+.formregistro {
+    grid-area: formemail;
+}
+
+.envioynewsletter {
+    display: grid;
+    grid-template-rows: 100px 200px; 
+    grid-template-areas:
+        "correo email"
+        "correo formemail";
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Asignar las áreas de la grilla */
+.mediosdeenvio {
+    grid-area: correo;
+}
+
+.registrate {
+    grid-area: email;
+}
+
+.formregistro {
+    grid-area: formemail;
+}
+
+.formregistro form {
+    display: flex;
+    flex-direction: column;     /* Acomoda los elementos en columna */
+    align-items: center;        
+    text-align: center;        
+    gap: 10px;                  
+}
+
+/*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
+@media (max-width: 768px) {
+    .envioynewsletter {
+        grid-template-columns: 1fr;     /* Una sola columna */
+        grid-template-rows: auto;       
+        grid-template-areas:
+            "correo"
+            "email"
+            "formemail";
+    }
+    .formregistro form {
+        width: 100%;            
+        max-width: 500px;               /* Evitar que se vuelva demasiado grande en tablets */
     }
 }
