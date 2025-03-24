@@ -317,9 +317,24 @@ footer p {
 /* Precios mayoristas en pantallas móviles */
 @media (max-width: 768px) {
     .productos {
-        width: 90%;                         /* Hace que la tabla ocupe más espacio en móviles */
+        width: 95%;                         /* Ocupar casi toda la pantalla en móviles */
+    }
+
+    .producto-header, .producto {
+        grid-template-columns: 2fr 1fr 1fr; /* Dar más espacio al nombre del producto */
+        text-align: left;                   /* Mantener alineado a la izquierda */
+    }
+
+    .producto-header {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .producto {
+        padding: 12px;
     }
 }
+
 
 
 span {
