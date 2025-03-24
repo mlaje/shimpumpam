@@ -568,3 +568,17 @@ h3 {
         max-width: 500px;               /* Evitar que se vuelva demasiado grande en tablets */
     }
 }
+
+/* Media query para hacer el menú de navegación principal de la página que sea vertical en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menunavegacionprincipal ul {
+        flex-direction: column;             /* Cambia a disposición por columnas */
+        align-items: center;                /* Centra los elementos */
+        gap: 10px;                          /* Reduce el espacio entre elementos */
+    }
+
+    .menunavegacionprincipal li {
+        width: 100%;                        /* Ocupar el ancho completo */
+        text-align: center;                 /* Centrar el texto */
+    }
+}
