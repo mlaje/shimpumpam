@@ -17,3 +17,7 @@ Uso de media queries
 - mayorista.html: para mostrar distinto el listado de precios mayoristas de los productos en pantallas móviles
 - contacto.html: la contact-section se ensancha en móviles y se muestra en columna
 - index.html: mostrar el medio envio, newsletter y formulario para registrar el mail, en una única columna 
+
+Animaciones
+- Animate style con el logo de la empresa
+- Gradiente radial para el top banner

@@ -631,3 +631,13 @@ h3 {
     }
     
 }
+
+
+.degradetopbanner {
+    background-image: radial-gradient(ellipse, rgb(255, 144, 187),rgb(255, 112, 166) )
+}
+
+.degrademenuprincipal {
+    background-image: radial-gradient(circle, rgb(255, 151, 112), rgb(255, 190, 126));
+
+}
