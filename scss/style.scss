@@ -1,0 +1,642 @@
+.top-banner,
+.middle-header,
+.banner,
+.menunavegacionprincipal {
+    width: 100%;                                            /* Asegura que todas ocupen el ancho completo */
+    box-sizing: border-box;                                 /* Evita problemas con el padding y width */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo para el banner de aviso superior */
+.top-banner {
+    background-color: rgb(255, 112, 166);               /* Color de fondo del banner */
+    color: white;                                       /* Color del texto */
+    text-align: center;                                   /* Centrar el texto */
+    font-size: 12px;                                      /* Tamaño del texto */
+    width: 100%;                                          /* Ancho completo */
+    padding: 10px;
+}
+
+.middle-header {
+    display: flex;                                          /* Uso de flex */
+    background-color: rgb(255, 151, 112); 
+    justify-content: space-between;
+    width: 100%;     
+}
+
+.logo {
+    width: 300px;  
+    height: auto;       
+    vertical-align: center;
+}
+
+/* Estilo para la barra de navegacion */
+.barra-navegacion {   
+    width: 100%; 
+   /* height: 100px;   */                                   /* Mantener altura de la barra */
+   /* position: fixed; */                                    /* Fijar la barra */
+   /* margin-top: 0;  */                                     /* Eliminar cualquier margen superior */
+   /* left: 0; */
+}
+
+.barra-navegacion ul {
+    display: flex;              /* Hace que los elementos de la lista se alineen en fila */
+    align-items: center;        /* Alinea verticalmente los elementos */
+    justify-content: right;     /* Distribuye los elementos uniformemente */
+    list-style: none;           /* Elimina los bullets */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;             /* Evita espacios en blanco */
+}
+
+
+.menunavegacionprincipal {
+    text-align: center; 
+    background-color: rgb(255, 151, 112) ; 
+}
+
+.menunavegacionprincipal ul {
+    display: flex;              /* Hace que los <li> estén en línea */
+    justify-content: center;    /* Centra los elementos horizontalmente */
+    padding: 0;
+    margin: 0;
+}
+
+.menunavegacionprincipal ul li {
+    margin: 0 15px;             /* Espaciado entre los elementos */
+}
+
+.menunavegacionprincipal a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: "Fredoka", serif;
+    display: inline-block;      /* Asegura que los enlaces se muestren correctamente */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menunavegacionprincipal a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 20px;
+    margin: 0 15px; 
+    font-size: 30px; 
+    font-family: "Fredoka", serif;
+    display: inline-block; 
+}
+
+.menunavegacionprincipal a:hover {
+    background-color: rgb(255, 174, 139);  /* Cambia el fondo al pasar el mouse */
+}
+
+
+
+
+
+.temporada a {
+    color: rgb(255, 151, 112);
+    text-decoration: none;    
+    font-family: "Fredoka", serif;
+    font-size: 20px;
+}
+
+.rounded-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;                    /* bordes sean redondeados */
+    border: 1px solid #ccc;               /* Un borde suave de color gris */
+}
+
+.search-button {
+    color: white;
+    width: 150px; 
+    height: 40px; 
+    font-size: 16px;
+    background-color:  rgb(255, 151, 112) ;
+    font-family:"Fredoka", serif;
+}
+
+#formContacto {
+    width: 100%;                                /* Ajusta el ancho del formulario */
+    margin: 40px auto;                          /* Centra el formulario */
+    padding: 20px;
+    background-color: #f9f9f9;                /* Color de fondo del formulario */
+    border-radius: 8px;                         /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+    font-family: "Fredoka", serif;
+    max-width: 500px; 
+}
+
+#formNewsletter {
+    width: 90%;                                  /* Ajusta el ancho del formulario */
+    margin: 40px auto;                           /* Centra el formulario */
+    padding: 20px;
+    background-color: #f9f9f9;                 /* Color de fondo del formulario */
+    border-radius: 8px;                          /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor */
+    font-family: "Fredoka", serif; 
+}
+
+#formContacto input[type="text"], 
+#formContacto textarea, 
+#formContacto input[type="submit"] {
+    width: 80%;
+    padding: 10px;                                /* Añade un poco de relleno para hacerlo más fácil de escribir */
+    margin-bottom: 10px;                          /* Añade espacio entre los campos */
+    margin-left: 10%;                             /* Centra los elementos con respecto al formulario */
+    box-sizing: border-box;                       /* Asegura que el padding no afecte el ancho */
+}
+
+
+#formNewsletter input[type="text"], 
+#formNewsletter input[type="submit"] {
+    width: 80%;
+    padding: 10px;                                 /* Añade un poco de relleno para hacerlo más fácil de escribir */
+    margin-bottom: 10px;                           /* Añade espacio entre los campos */
+    margin-left: 10%;                              /* Centra los elementos con respecto al formulario */
+    box-sizing: border-box;                        /* Asegura que el padding no afecte el ancho */
+}
+
+#formContacto input[type="submit"] {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color:  rgb(255, 151, 112);        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+}
+
+
+#formNewsletter input[type="submit"] {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color:  rgb(255, 151, 112);        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+}
+
+
+#formContacto input[type="submit"]:hover {
+    background-color: rgb(255, 174, 139);         /* Cambia el color de fondo cuando el botón es presionado */
+}
+
+
+#filtrarPrecio {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color:  rgb(255, 151, 112);        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+    font-size: 16px;
+    padding: 10px; 
+    margin-bottom: 10px;
+}
+
+/*
+#precioDesde, #precioHasta {
+    width: 70px;
+    height: 30px;    
+    font-family: "Fredoka", serif; 
+    font-size: 16px;
+}
+*/
+
+.filtroPrecio input[type="text"] {
+    width: 70px;
+    height: 30px;    
+    font-family: "Fredoka", serif; 
+    font-size: 16px;
+}
+
+.mostrarMas, .botonCompra {
+    display: inline-block;  /* Asegura que el botón respete el tamaño */
+    width: 110px;
+    height: 40px;    
+    font-family: "Fredoka", serif;  /* 'sans-serif' es más adecuado si es Fredoka One */
+    font-size: 16px;
+    background-color: rgb(255, 151, 112);       
+    color: white;
+    text-align: center;  
+    line-height: 30px;  /* Centra el texto verticalmente */
+    border: none;  /* Elimina cualquier borde predeterminado */
+    border-radius: 5px;  /* Hace las esquinas redondeadas */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s ease;  /* Efecto suave al pasar el mouse */
+}
+
+.botonCompra:hover {
+    background-color: rgb(255, 130, 90);  /* Color más oscuro al pasar el mouse */
+}
+
+
+label {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    width: 200px;
+}
+
+p {
+    font-family: "Montserrat", serif;
+}
+
+footer {
+    background-color: #f1f1f1; 
+    padding: 20px 0; 
+    text-align: left; 
+    font-family: "Montserrat", serif;
+    color: black; 
+}
+
+footer p {
+    margin: 10px 0; 
+}
+
+#correo {
+    width: 100px;
+    height: 50px;
+} 
+
+.copyright {
+    text-align: center;                             /* Centra el texto */
+    background-color: rgb(255, 151, 112);         /* Cambia el color de fondo */
+    padding: 5px 0;                                 /* Añade un poco de espacio en el interior */
+    color: white;                                 /* Cambia el color del texto a blanco */
+    font-size: 14px;                                /* Establece un tamaño de fuente adecuado */
+}
+
+.newsletter {
+    text-align: center;
+}
+
+
+.productos {
+    width: 40%;
+    margin: auto; 
+    font-family: "Fredoka", serif;
+}
+
+.producto-header, .producto {
+    display: grid;                                              /* USO DE CSS GRID */    
+    grid-template-columns: 1fr 1fr 1fr;                         /* 3 columnas */
+    gap: 10px;
+    padding: 10px;
+    text-align: left;   
+}
+
+.producto-header {
+    font-weight: bold;
+    background-color: rgb(255, 151, 112); 
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.producto {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    border: 1px solid #f2f2f2; 
+}
+
+/* Precios mayoristas en pantallas móviles */
+@media (max-width: 768px) {
+    .productos {
+        width: 95%;                         /* Ocupar casi toda la pantalla en móviles */
+    }
+
+    .producto-header, .producto {
+        grid-template-columns: 2fr 1fr 1fr; /* Dar más espacio al nombre del producto */
+        text-align: left;                   /* Mantener alineado a la izquierda */
+    }
+
+    .producto-header {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .producto {
+        padding: 12px;
+    }
+}
+
+
+
+span {
+    padding: 5px;
+}
+
+/* Filas alternas */
+.producto:nth-child(even) {
+    background-color: #f2f2f2; /* Gris claro para filas pares */
+}
+
+.producto:nth-child(odd) {
+    background-color: #ffffff; /* Blanco para filas impares */
+}
+
+/* Efecto hover */
+.producto:hover {
+    background-color: #ddd; /* Gris más oscuro cuando el mouse pasa por encima */
+}
+
+.minimo, .precio {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: "Fredoka", serif;      /* Mantiene la fuente personalizada */
+    font-weight: bold;                  /* Recupera el estilo en negrita */
+    text-align: center;                 /* Centrado */
+    margin: 20px 0;                     /* Ajuste del margen */
+    color: rgb(255, 151, 112); 
+}
+
+h1 {
+    font-size: 2.5rem;                  /* Ajusta el tamaño según el diseño */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: normal;
+}
+
+
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 25%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+}
+
+.card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.card img {
+      max-height: 100%;
+}
+
+@media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+}
+
+.card .img-wrapper img {
+    width: 100%;                    
+    height: 100%;                   
+    object-fit: contain;            /* Mantiene la proporción sin recortar */  
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;         /* título texto en columna */
+    align-items: center;          
+    text-align: center;             
+}
+
+
+.card-title {
+    font-size: large;
+ }
+
+.precio-original {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(255, 151, 112); 
+}
+
+.boton-container {
+    display: flex;
+    justify-content: center;        /* Centra los botones horizontalmente */
+    gap: 10px;                      /* Espacio entre los botones */
+    margin-top: 10px;               /* Espacio con respecto al texto */
+    width: 100%;                    /* Ocupa el ancho disponible */
+}
+
+.boton-container a {
+    text-decoration: none;
+    display: inline-block;          /* Asegura que los botones se comporten correctamente */
+}
+
+.precio-descuento {
+    font-size: medium;
+    color: rgb(255, 151, 112);      /*rgb(255, 80, 80);*/      /* Rojo */
+    font-weight: bold;
+}
+
+.precio-descuento span {
+    font-size: small;
+    color: rgb(100, 100, 100);    /* Gris */
+    display: block;                 /* Lo coloca debajo del precio */
+    margin-top: 0px;
+}
+
+/* Contenedor principal del formulario y los datos de contacto */
+.contact-section {
+    display: flex;
+    justify-content: space-between;     /* Espacio entre los dos bloques */
+    align-items: flex-start;            /* Alinea arriba */
+    max-width: 70%;                     /* Reducido un poco para que no quede tan angosto */
+    margin: 0 auto;                     /* Centra la sección */
+    padding: 20px;
+}
+
+/* Sección de datos de contacto (1/3 del ancho total) */
+.contact-section .contact-info {
+    width: 35%;                         /* Reduce para dar más espacio al formulario */
+}
+
+/* Sección del formulario (2/3 del ancho total) */
+.contact-section .contact-form {
+    width: 65%;                         /* Ahora ocupa el doble que los datos de contacto */
+}
+
+/* Asegurar que el formulario use el 100% de su contenedor */
+.contact-section .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;                          /* Espacio entre los campos */
+    width: 100%;                        /* Para que use todo el ancho disponible */
+    max-width: 500px;                   /* Ajuste para evitar que se vea demasiado estrecho */
+}
+
+/* Estilo de inputs */
+.contact-section .contact-form input,
+.contact-section .contact-form textarea {
+    width: 100%;                        /* Ocupa el ancho completo del formulario */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;             /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Ajustes responsivos: en móviles se apilan */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;                 /* Más ancho en móviles */
+    }
+    
+    .contact-section .contact-info, 
+    .contact-section .contact-form {
+        width: 100%;                    /* Ocupa todo el ancho en móviles */
+        text-align: center;
+    }
+
+    /* Ajuste de ancho del formulario en móviles */
+    .contact-section .contact-form form {
+        max-width: 100%;                /* Permitir que se expanda en pantallas pequeñas */
+    }
+}
+
+
+.envioynewsletter {
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 15% 85%; 
+    grid-template-areas:
+        "correo email"
+        "correo formemail";
+    gap: 10px; /* Espacio entre los elementos */
+    margin: 0 auto;
+}
+
+/* Asignar las áreas de la grilla */
+.mediosdeenvio {
+    grid-area: correo;
+}
+
+.registrate {
+    grid-area: email;
+}
+
+.formregistro {
+    grid-area: formemail;
+    
+}
+
+.formregistro form {
+    display: flex;
+    flex-direction: column;     /* Acomoda los elementos en columna */
+    align-items: center;        
+    text-align: center;        
+    gap: 10px;             
+    max-width: 400px;     
+}
+
+/*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
+@media (max-width: 768px) {
+    .envioynewsletter {
+        grid-template-columns: 1fr;     /* Una sola columna */
+        grid-template-rows: auto;       
+        grid-template-areas:
+            "correo"
+            "email"
+            "formemail";
+    }
+    .formregistro form {
+        width: 100%;            
+        max-width: 500px;               /* Evitar que se vuelva demasiado grande en tablets */
+    }
+}
+
+/* Media query para hacer el menú de navegación principal de la página que sea vertical en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menunavegacionprincipal ul {
+        flex-direction: column;             /* Cambia a disposición por columnas */
+        align-items: center;                /* Centra los elementos */
+        gap: 10px;                          /* Reduce el espacio entre elementos */
+    }
+
+    .menunavegacionprincipal li {
+        width: 100%;                        /* Ocupar el ancho completo */
+        text-align: center;                 /* Centrar el texto */
+    }
+}
+
+@media (max-width: 768px) {
+    .middle-header {
+        flex-direction: column;         /* Cambia a disposición vertical */
+        align-items: center;            /* Centra los elementos */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .barra-navegacion nav ul {
+        display: flex;
+        flex-direction: row;            /* Íconos en fila */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-container {
+        width: 100%;                    /* Para que el buscador sea más accesible */
+        max-width: 400px;
+    }
+
+    #search-button {
+        display: none;                  /* Oculta el botón en pantallas pequeñas */
+    }
+    
+}
+
+
+.degradetopbanner {
+    background-image: radial-gradient(ellipse, rgb(255, 144, 187),rgb(255, 112, 166) )
+}
+
+.degrademenuprincipal {
+    background-image: radial-gradient(circle, rgb(255, 151, 112), rgb(255, 190, 126));
+}
