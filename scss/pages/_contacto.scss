@@ -1,0 +1,83 @@
+@use '../base/variables';
+
+/* Contenedor principal del formulario y los datos de contacto */
+.contact-section {
+    display: flex;
+    justify-content: space-between;     /* Espacio entre los dos bloques */
+    align-items: flex-start;            /* Alinea arriba */
+    max-width: 70%;                     /* Reducido un poco para que no quede tan angosto */
+    margin: 0 auto;                     /* Centra la sección */
+    padding: 20px;
+    .contact-info {                     /* Sección de datos de contacto (1/3 del ancho total) */
+        width: 35%;                         /* Reduce para dar más espacio al formulario */
+    }
+    .contact-form {
+        width: 65%;                         /* Ahora ocupa el doble que los datos de contacto */
+        form {                          /* Asegurar que el formulario use el 100% de su contenedor */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;                          /* Espacio entre los campos */
+            width: 100%;                        /* Para que use todo el ancho disponible */
+            max-width: 500px;                   /* Ajuste para evitar que se vea demasiado estrecho */
+        }
+        input, textarea {                   /* Estilo de inputs */
+            width: 100%;                        /* Ocupa el ancho completo del formulario */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;             /* Asegura que el padding no afecte el ancho total */
+        }
+    }
+}
+
+/* Ajustes responsivos: en móviles se apilan */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;                 /* Más ancho en móviles */
+    }
+    
+    .contact-section .contact-info, 
+    .contact-section .contact-form {
+        width: 100%;                    /* Ocupa todo el ancho en móviles */
+        text-align: center;
+    }
+
+    /* Ajuste de ancho del formulario en móviles */
+    .contact-section .contact-form form {
+        max-width: 100%;                /* Permitir que se expanda en pantallas pequeñas */
+    }
+}
+
+#formContacto {
+    width: 100%;                                /* Ajusta el ancho del formulario */
+    margin: 40px auto;                          /* Centra el formulario */
+    padding: 20px;
+    background-color: #f9f9f9;                /* Color de fondo del formulario */
+    border-radius: 8px;                         /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+    font-family: variables.$sitefont;
+    max-width: 500px; 
+    input[type="text"], textarea, input[type="submit"] {
+        width: 80%;
+        padding: 10px;                                /* Añade un poco de relleno para hacerlo más fácil de escribir */
+        margin-bottom: 10px;                          /* Añade espacio entre los campos */
+        margin-left: 10%;                             /* Centra los elementos con respecto al formulario */
+        box-sizing: border-box;                       /* Asegura que el padding no afecte el ancho */
+    }
+}
+
+#formContacto input[type="submit"] {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color: variables.$sitecolor;        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+}
+
+#formContacto input[type="submit"]:hover {
+    background-color: rgb(255, 174, 139);         /* Cambia el color de fondo cuando el botón es presionado */
+}
+

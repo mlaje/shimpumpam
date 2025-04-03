@@ -1,0 +1,20 @@
+@use '../base/variables';
+
+footer {
+    background-color: #f1f1f1; 
+    padding: 20px 0; 
+    text-align: left; 
+    font-family: variables.$siteparagraphfont;
+    color: black; 
+    p {
+        margin: 10px 0; 
+    }
+}
+
+.copyright {
+    text-align: center;                             /* Centra el texto */
+    background-color: variables.$sitecolor;         /* Cambia el color de fondo */
+    padding: 5px 0;                                 /* Añade un poco de espacio en el interior */
+    color: white;                                 /* Cambia el color del texto a blanco */
+    font-size: 14px;                                /* Establece un tamaño de fuente adecuado */
+}

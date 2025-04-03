@@ -1,0 +1,47 @@
+@use './variables';
+
+h1, h2, h3 {
+    font-family: variables.$sitefont;      /* Mantiene la fuente personalizada */
+    font-weight: bold;                  /* Recupera el estilo en negrita */
+    text-align: center;                 /* Centrado */
+    margin: 20px 0;                     /* Ajuste del margen */
+    color: variables.$sitecolor
+}
+
+h1 {
+    font-size: 2.5rem;                  /* Ajusta el tamaño según el diseño */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: normal;
+}
+
+p {
+    font-family: variables.$siteparagraphfont;
+}
+
+span {
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    width: 200px;
+}

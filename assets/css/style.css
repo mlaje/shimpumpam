@@ -1,4 +1,50 @@
 @charset "UTF-8";
+h1, h2, h3 {
+  font-family: "Fredoka", serif; /* Mantiene la fuente personalizada */
+  font-weight: bold; /* Recupera el estilo en negrita */
+  text-align: center; /* Centrado */
+  margin: 20px 0; /* Ajuste del margen */
+  color: rgb(255, 151, 112);
+}
+
+h1 {
+  font-size: 2.5rem; /* Ajusta el tamaño según el diseño */
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+p {
+  font-family: "Montserrat", serif;
+}
+
+span {
+  padding: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-left: 10%;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  width: 200px;
+}
+
 .top-banner,
 .middle-header,
 .banner,
@@ -79,19 +125,6 @@
   background-color: rgb(255, 174, 139); /* Cambia el fondo al pasar el mouse */
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.temporada a {
-  color: rgb(255, 151, 112);
-  text-decoration: none;
-  font-family: "Fredoka", serif;
-  font-size: 20px;
-}
-
 .rounded-input {
   padding: 10px;
   font-size: 16px;
@@ -108,61 +141,67 @@ nav ul {
   font-family: "Fredoka", serif;
 }
 
-#formContacto {
-  width: 100%; /* Ajusta el ancho del formulario */
-  margin: 40px auto; /* Centra el formulario */
-  padding: 20px;
-  background-color: #f9f9f9; /* Color de fondo del formulario */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+/* Media query para hacer el menú de navegación principal de la página que sea vertical en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menunavegacionprincipal ul {
+    flex-direction: column; /* Cambia a disposición por columnas */
+    align-items: center; /* Centra los elementos */
+    gap: 10px; /* Reduce el espacio entre elementos */
+  }
+  .menunavegacionprincipal li {
+    width: 100%; /* Ocupar el ancho completo */
+    text-align: center; /* Centrar el texto */
+  }
+}
+@media (max-width: 768px) {
+  .middle-header {
+    flex-direction: column; /* Cambia a disposición vertical */
+    align-items: center; /* Centra los elementos */
+    text-align: center;
+    gap: 10px;
+  }
+  .barra-navegacion nav ul {
+    display: flex;
+    flex-direction: row; /* Íconos en fila */
+    align-items: center;
+    gap: 10px;
+  }
+  .search-container {
+    width: 100%; /* Para que el buscador sea más accesible */
+    max-width: 400px;
+  }
+  #search-button {
+    display: none; /* Oculta el botón en pantallas pequeñas */
+  }
+}
+.temporada a {
+  color: rgb(255, 151, 112);
+  text-decoration: none;
   font-family: "Fredoka", serif;
-  max-width: 500px;
-}
-#formContacto input[type=text], #formContacto textarea, #formContacto input[type=submit] {
-  width: 80%;
-  padding: 10px; /* Añade un poco de relleno para hacerlo más fácil de escribir */
-  margin-bottom: 10px; /* Añade espacio entre los campos */
-  margin-left: 10%; /* Centra los elementos con respecto al formulario */
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  font-size: 20px;
 }
 
-#formNewsletter {
-  width: 90%; /* Ajusta el ancho del formulario */
-  margin: 40px auto; /* Centra el formulario */
-  padding: 20px;
-  background-color: #f9f9f9; /* Color de fondo del formulario */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
-  font-family: "Fredoka", serif;
-}
-#formNewsletter input[type=text], #formNewsletter input[type=submit] {
-  width: 80%;
-  padding: 10px; /* Añade un poco de relleno para hacerlo más fácil de escribir */
-  margin-bottom: 10px; /* Añade espacio entre los campos */
-  margin-left: 10%; /* Centra los elementos con respecto al formulario */
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+.newsletter {
+  text-align: center;
 }
 
-#formContacto input[type=submit] {
-  cursor: pointer; /* Cambia el cursor cuando el usuario pasa por encima */
-  background-color: rgb(255, 151, 112); /* Color de fondo */
-  color: white; /* Color del texto */
-  border: none; /* Elimina el borde predeterminado */
-  border-radius: 4px; /* Bordes redondeados */
-  transition: background-color 0.3s ease; /* Transición para el hover */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  text-align: left;
+  font-family: "Montserrat", serif;
+  color: black;
+}
+footer p {
+  margin: 10px 0;
 }
 
-#formNewsletter input[type=submit] {
-  cursor: pointer; /* Cambia el cursor cuando el usuario pasa por encima */
-  background-color: rgb(255, 151, 112); /* Color de fondo */
-  color: white; /* Color del texto */
-  border: none; /* Elimina el borde predeterminado */
-  border-radius: 4px; /* Bordes redondeados */
-  transition: background-color 0.3s ease; /* Transición para el hover */
-}
-
-#formContacto input[type=submit]:hover {
-  background-color: rgb(255, 174, 139); /* Cambia el color de fondo cuando el botón es presionado */
+.copyright {
+  text-align: center; /* Centra el texto */
+  background-color: rgb(255, 151, 112); /* Cambia el color de fondo */
+  padding: 5px 0; /* Añade un poco de espacio en el interior */
+  color: white; /* Cambia el color del texto a blanco */
+  font-size: 14px; /* Establece un tamaño de fuente adecuado */
 }
 
 #filtrarPrecio {
@@ -177,14 +216,6 @@ nav ul {
   margin-bottom: 10px;
 }
 
-/*
-#precioDesde, #precioHasta {
-    width: 70px;
-    height: 30px;    
-    font-family: "Fredoka", serif; 
-    font-size: 16px;
-}
-*/
 .filtroPrecio input[type=text] {
   width: 70px;
   height: 30px;
@@ -192,11 +223,15 @@ nav ul {
   font-size: 16px;
 }
 
-.mostrarMas, .botonCompra {
+.carousel-inner {
+  padding: 1em;
+}
+
+.botonCompra {
   display: inline-block; /* Asegura que el botón respete el tamaño */
   width: 110px;
   height: 40px;
-  font-family: "Fredoka", serif; /* 'sans-serif' es más adecuado si es Fredoka One */
+  font-family: "Fredoka", serif;
   font-size: 16px;
   background-color: rgb(255, 151, 112);
   color: white;
@@ -210,141 +245,6 @@ nav ul {
 
 .botonCompra:hover {
   background-color: rgb(255, 130, 90); /* Color más oscuro al pasar el mouse */
-}
-
-label {
-  display: block;
-  margin-left: 10%;
-  margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #333;
-  width: 200px;
-}
-
-p {
-  font-family: "Montserrat", serif;
-}
-
-footer {
-  background-color: #f1f1f1;
-  padding: 20px 0;
-  text-align: left;
-  font-family: "Montserrat", serif;
-  color: black;
-}
-footer p {
-  margin: 10px 0;
-}
-
-#correo {
-  width: 100px;
-  height: 50px;
-}
-
-.copyright {
-  text-align: center; /* Centra el texto */
-  background-color: rgb(255, 151, 112); /* Cambia el color de fondo */
-  padding: 5px 0; /* Añade un poco de espacio en el interior */
-  color: white; /* Cambia el color del texto a blanco */
-  font-size: 14px; /* Establece un tamaño de fuente adecuado */
-}
-
-.newsletter {
-  text-align: center;
-}
-
-.productos {
-  width: 40%;
-  margin: auto;
-  font-family: "Fredoka", serif;
-}
-
-.producto-header, .producto {
-  display: grid; /* USO DE CSS GRID */
-  grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
-  gap: 10px;
-  padding: 10px;
-  text-align: left;
-}
-
-.producto-header {
-  font-weight: bold;
-  background-color: rgb(255, 151, 112);
-  color: white;
-  padding: 15px;
-  font-size: 20px;
-}
-
-.producto {
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-  border: 1px solid #f2f2f2;
-}
-
-/* Precios mayoristas en pantallas móviles */
-@media (max-width: 768px) {
-  .productos {
-    width: 95%; /* Ocupar casi toda la pantalla en móviles */
-  }
-  .producto-header, .producto {
-    grid-template-columns: 2fr 1fr 1fr; /* Dar más espacio al nombre del producto */
-    text-align: left; /* Mantener alineado a la izquierda */
-  }
-  .producto-header {
-    font-size: 18px;
-    padding: 12px;
-  }
-  .producto {
-    padding: 12px;
-  }
-}
-span {
-  padding: 5px;
-}
-
-/* Filas alternas */
-.producto:nth-child(even) {
-  background-color: #f2f2f2; /* Gris claro para filas pares */
-}
-
-.producto:nth-child(odd) {
-  background-color: #ffffff; /* Blanco para filas impares */
-}
-
-/* Efecto hover */
-.producto:hover {
-  background-color: #ddd; /* Gris más oscuro cuando el mouse pasa por encima */
-}
-
-.minimo, .precio {
-  text-align: center;
-}
-
-h1, h2, h3 {
-  font-family: "Fredoka", serif; /* Mantiene la fuente personalizada */
-  font-weight: bold; /* Recupera el estilo en negrita */
-  text-align: center; /* Centrado */
-  margin: 20px 0; /* Ajuste del margen */
-  color: rgb(255, 151, 112);
-}
-
-h1 {
-  font-size: 2.5rem; /* Ajusta el tamaño según el diseño */
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  text-align: left;
-  font-weight: normal;
-}
-
-.carousel-inner {
-  padding: 1em;
 }
 
 .card {
@@ -434,6 +334,79 @@ h3 {
   margin-top: 0px;
 }
 
+#formNewsletter {
+  width: 90%; /* Ajusta el ancho del formulario */
+  margin: 40px auto; /* Centra el formulario */
+  padding: 20px;
+  background-color: #f9f9f9; /* Color de fondo del formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+  font-family: "Fredoka", serif;
+}
+#formNewsletter input[type=text], #formNewsletter input[type=submit] {
+  width: 80%;
+  padding: 10px; /* Añade un poco de relleno para hacerlo más fácil de escribir */
+  margin-bottom: 10px; /* Añade espacio entre los campos */
+  margin-left: 10%; /* Centra los elementos con respecto al formulario */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+#formNewsletter input[type=submit] {
+  cursor: pointer; /* Cambia el cursor cuando el usuario pasa por encima */
+  background-color: rgb(255, 151, 112); /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición para el hover */
+}
+
+#correo {
+  width: 100px;
+  height: 50px;
+}
+
+.envioynewsletter {
+  display: grid;
+  grid-template-rows: 100px 200px;
+  grid-template-columns: 15% 85%;
+  grid-template-areas: "correo email" "correo formemail";
+  gap: 10px; /* Espacio entre los elementos */
+  margin: 0 auto;
+}
+
+/* Asignar las áreas de la grilla */
+.mediosdeenvio {
+  grid-area: correo;
+}
+
+.registrate {
+  grid-area: email;
+}
+
+.formregistro {
+  grid-area: formemail;
+}
+.formregistro form {
+  display: flex;
+  flex-direction: column; /* Acomoda los elementos en columna */
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  max-width: 400px;
+}
+
+/*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
+@media (max-width: 768px) {
+  .envioynewsletter {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto;
+    grid-template-areas: "correo" "email" "formemail";
+  }
+  .formregistro form {
+    width: 100%;
+    max-width: 500px; /* Evitar que se vuelva demasiado grande en tablets */
+  }
+}
 /* Contenedor principal del formulario y los datos de contacto */
 .contact-section {
   display: flex;
@@ -481,81 +454,101 @@ h3 {
     max-width: 100%; /* Permitir que se expanda en pantallas pequeñas */
   }
 }
-.envioynewsletter {
-  display: grid;
-  grid-template-rows: 100px 200px;
-  grid-template-columns: 15% 85%;
-  grid-template-areas: "correo email" "correo formemail";
-  gap: 10px; /* Espacio entre los elementos */
-  margin: 0 auto;
+#formContacto {
+  width: 100%; /* Ajusta el ancho del formulario */
+  margin: 40px auto; /* Centra el formulario */
+  padding: 20px;
+  background-color: #f9f9f9; /* Color de fondo del formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+  font-family: "Fredoka", serif;
+  max-width: 500px;
+}
+#formContacto input[type=text], #formContacto textarea, #formContacto input[type=submit] {
+  width: 80%;
+  padding: 10px; /* Añade un poco de relleno para hacerlo más fácil de escribir */
+  margin-bottom: 10px; /* Añade espacio entre los campos */
+  margin-left: 10%; /* Centra los elementos con respecto al formulario */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
-/* Asignar las áreas de la grilla */
-.mediosdeenvio {
-  grid-area: correo;
+#formContacto input[type=submit] {
+  cursor: pointer; /* Cambia el cursor cuando el usuario pasa por encima */
+  background-color: rgb(255, 151, 112); /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición para el hover */
 }
 
-.registrate {
-  grid-area: email;
+#formContacto input[type=submit]:hover {
+  background-color: rgb(255, 174, 139); /* Cambia el color de fondo cuando el botón es presionado */
 }
 
-.formregistro {
-  grid-area: formemail;
+.productos {
+  width: 40%;
+  margin: auto;
+  font-family: "Fredoka", serif;
 }
-.formregistro form {
-  display: flex;
-  flex-direction: column; /* Acomoda los elementos en columna */
-  align-items: center;
-  text-align: center;
+
+.producto-header, .producto {
+  display: grid; /* USO DE CSS GRID */
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
   gap: 10px;
-  max-width: 400px;
+  padding: 10px;
+  text-align: left;
 }
 
-/*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
+.producto-header {
+  font-weight: bold;
+  background-color: rgb(255, 151, 112);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.producto {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  border: 1px solid #f2f2f2;
+}
+
+/* Filas alternas */
+.producto:nth-child(even) {
+  background-color: #f2f2f2; /* Gris claro para filas pares */
+}
+
+.producto:nth-child(odd) {
+  background-color: #ffffff; /* Blanco para filas impares */
+}
+
+/* Efecto hover */
+.producto:hover {
+  background-color: #ddd; /* Gris más oscuro cuando el mouse pasa por encima */
+}
+
+.minimo, .precio {
+  text-align: center;
+}
+
+/* Precios mayoristas en pantallas móviles */
 @media (max-width: 768px) {
-  .envioynewsletter {
-    grid-template-columns: 1fr; /* Una sola columna */
-    grid-template-rows: auto;
-    grid-template-areas: "correo" "email" "formemail";
+  .productos {
+    width: 95%; /* Ocupar casi toda la pantalla en móviles */
   }
-  .formregistro form {
-    width: 100%;
-    max-width: 500px; /* Evitar que se vuelva demasiado grande en tablets */
+  .producto-header, .producto {
+    grid-template-columns: 2fr 1fr 1fr; /* Dar más espacio al nombre del producto */
+    text-align: left; /* Mantener alineado a la izquierda */
+  }
+  .producto-header {
+    font-size: 18px;
+    padding: 12px;
+  }
+  .producto {
+    padding: 12px;
   }
 }
-/* Media query para hacer el menú de navegación principal de la página que sea vertical en pantallas pequeñas */
-@media (max-width: 768px) {
-  .menunavegacionprincipal ul {
-    flex-direction: column; /* Cambia a disposición por columnas */
-    align-items: center; /* Centra los elementos */
-    gap: 10px; /* Reduce el espacio entre elementos */
-  }
-  .menunavegacionprincipal li {
-    width: 100%; /* Ocupar el ancho completo */
-    text-align: center; /* Centrar el texto */
-  }
-}
-@media (max-width: 768px) {
-  .middle-header {
-    flex-direction: column; /* Cambia a disposición vertical */
-    align-items: center; /* Centra los elementos */
-    text-align: center;
-    gap: 10px;
-  }
-  .barra-navegacion nav ul {
-    display: flex;
-    flex-direction: row; /* Íconos en fila */
-    align-items: center;
-    gap: 10px;
-  }
-  .search-container {
-    width: 100%; /* Para que el buscador sea más accesible */
-    max-width: 400px;
-  }
-  #search-button {
-    display: none; /* Oculta el botón en pantallas pequeñas */
-  }
-}
+/* SACAR más adelante */
 .degradetopbanner {
   background-image: radial-gradient(ellipse, rgb(255, 144, 187), rgb(255, 112, 166));
 }

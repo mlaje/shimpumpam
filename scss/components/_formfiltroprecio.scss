@@ -1,0 +1,20 @@
+@use '../base/variables';
+
+#filtrarPrecio {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color: variables.$sitecolor;        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+    font-size: 16px;
+    padding: 10px; 
+    margin-bottom: 10px;
+}
+
+.filtroPrecio input[type="text"] {
+    width: 70px;
+    height: 30px;    
+    font-family: variables.$sitefont;
+    font-size: 16px;
+}

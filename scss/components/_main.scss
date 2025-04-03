@@ -1,0 +1,13 @@
+@use '../base/variables';
+
+.temporada a {
+    color: variables.$sitecolor;
+    text-decoration: none;    
+    font-family: variables.$sitefont;
+    font-size: 20px;
+}
+
+.newsletter {
+    text-align: center;
+}
+

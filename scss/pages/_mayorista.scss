@@ -1,0 +1,71 @@
+@use '../base/variables';
+
+.productos {
+    width: 40%;
+    margin: auto; 
+    font-family: variables.$sitefont;
+}
+
+.producto-header, .producto {
+    display: grid;                                /* USO DE CSS GRID */    
+    grid-template-columns: 1fr 1fr 1fr;           /* 3 columnas */
+    gap: 10px;
+    padding: 10px;
+    text-align: left;   
+}
+
+.producto-header {
+    font-weight: bold;
+    background-color: variables.$sitecolor; 
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.producto {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    border: 1px solid #f2f2f2; 
+}
+
+
+/* Filas alternas */
+.producto:nth-child(even) {
+    background-color: #f2f2f2; /* Gris claro para filas pares */
+}
+
+.producto:nth-child(odd) {
+    background-color: #ffffff; /* Blanco para filas impares */
+}
+
+/* Efecto hover */
+.producto:hover {
+    background-color: #ddd; /* Gris más oscuro cuando el mouse pasa por encima */
+}
+
+.minimo, .precio {
+    text-align: center;
+}
+
+
+
+/* Precios mayoristas en pantallas móviles */
+@media (max-width: 768px) {
+    .productos {
+        width: 95%;                         /* Ocupar casi toda la pantalla en móviles */
+    }
+
+    .producto-header, .producto {
+        grid-template-columns: 2fr 1fr 1fr; /* Dar más espacio al nombre del producto */
+        text-align: left;                   /* Mantener alineado a la izquierda */
+    }
+
+    .producto-header {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .producto {
+        padding: 12px;
+    }
+}

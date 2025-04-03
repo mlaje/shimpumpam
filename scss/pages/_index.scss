@@ -1,0 +1,83 @@
+@use '../base/variables';
+
+#formNewsletter {
+    width: 90%;                                  /* Ajusta el ancho del formulario */
+    margin: 40px auto;                           /* Centra el formulario */
+    padding: 20px;
+    background-color: #f9f9f9;                 /* Color de fondo del formulario */
+    border-radius: 8px;                          /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor */
+    font-family: variables.$sitefont;
+    input[type="text"], input[type="submit"] {
+        width: 80%;
+        padding: 10px;                                 /* Añade un poco de relleno para hacerlo más fácil de escribir */
+        margin-bottom: 10px;                           /* Añade espacio entre los campos */
+        margin-left: 10%;                              /* Centra los elementos con respecto al formulario */
+        box-sizing: border-box;                        /* Asegura que el padding no afecte el ancho */
+    }
+}
+
+#formNewsletter input[type="submit"] {
+    cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
+    background-color: variables.$sitecolor;        /* Color de fondo */
+    color: white;                                 /* Color del texto */
+    border: none;                                   /* Elimina el borde predeterminado */
+    border-radius: 4px;                             /* Bordes redondeados */
+    transition: background-color 0.3s ease;         /* Transición para el hover */
+}
+
+
+#correo {
+    width: 100px;
+    height: 50px;
+} 
+
+
+.envioynewsletter {
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 15% 85%; 
+    grid-template-areas:
+        "correo email"
+        "correo formemail";
+    gap: 10px; /* Espacio entre los elementos */
+    margin: 0 auto;
+}
+
+/* Asignar las áreas de la grilla */
+.mediosdeenvio {
+    grid-area: correo;
+}
+
+
+.registrate {
+    grid-area: email;
+}
+
+.formregistro {
+    grid-area: formemail;
+    form {
+        display: flex;
+        flex-direction: column;     /* Acomoda los elementos en columna */
+        align-items: center;        
+        text-align: center;        
+        gap: 10px;             
+        max-width: 400px;     
+    }
+}
+
+/*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
+@media (max-width: 768px) {
+    .envioynewsletter {
+        grid-template-columns: 1fr;     /* Una sola columna */
+        grid-template-rows: auto;       
+        grid-template-areas:
+            "correo"
+            "email"
+            "formemail";
+    }
+    .formregistro form {
+        width: 100%;            
+        max-width: 500px;               /* Evitar que se vuelva demasiado grande en tablets */
+    }
+}
