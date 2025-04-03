@@ -1,4 +1,4 @@
-@use '../base/variables';
+@use '../base/variables' as *;
 
 #formNewsletter {
     width: 90%;                                  /* Ajusta el ancho del formulario */
@@ -7,7 +7,7 @@
     background-color: #f9f9f9;                 /* Color de fondo del formulario */
     border-radius: 8px;                          /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor */
-    font-family: variables.$sitefont;
+    font-family: $sitefont;
     input[type="text"], input[type="submit"] {
         width: 80%;
         padding: 10px;                                 /* Añade un poco de relleno para hacerlo más fácil de escribir */
@@ -19,7 +19,7 @@
 
 #formNewsletter input[type="submit"] {
     cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
-    background-color: variables.$sitecolor;        /* Color de fondo */
+    background-color: $sitecolor;        /* Color de fondo */
     color: white;                                 /* Color del texto */
     border: none;                                   /* Elimina el borde predeterminado */
     border-radius: 4px;                             /* Bordes redondeados */

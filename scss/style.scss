@@ -11,21 +11,6 @@
 @use 'pages/contacto';
 @use 'pages/mayorista';
 
-@use 'base/variables';                          /* SACAR más adelante */
 
 
 
-
-
-
-
-
-
-
-.degradetopbanner {
-    background-image: radial-gradient(ellipse, rgb(255, 144, 187), rgb(255, 112, 166) )
-}
-
-.degrademenuprincipal {
-    background-image: radial-gradient(circle, variables.$sitecolor, rgb(255, 190, 126));
-}

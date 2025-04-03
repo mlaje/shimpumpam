@@ -1,11 +1,11 @@
-@use './variables';
+@use './variables' as *;
 
 h1, h2, h3 {
-    font-family: variables.$sitefont;      /* Mantiene la fuente personalizada */
+    font-family: $sitefont;      /* Mantiene la fuente personalizada */
     font-weight: bold;                  /* Recupera el estilo en negrita */
     text-align: center;                 /* Centrado */
     margin: 20px 0;                     /* Ajuste del margen */
-    color: variables.$sitecolor
+    color: $sitecolor
 }
 
 h1 {
@@ -23,7 +23,7 @@ h3 {
 }
 
 p {
-    font-family: variables.$siteparagraphfont;
+    font-family: $siteparagraphfont;
 }
 
 span {

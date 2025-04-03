@@ -1,9 +1,9 @@
-@use '../base/variables';
+@use '../base/variables' as *;
 
 .productos {
     width: 40%;
     margin: auto; 
-    font-family: variables.$sitefont;
+    font-family: $sitefont;
 }
 
 .producto-header, .producto {
@@ -16,7 +16,7 @@
 
 .producto-header {
     font-weight: bold;
-    background-color: variables.$sitecolor; 
+    background-color: $sitecolor; 
     color: white;
     padding: 15px;
     font-size: 20px;

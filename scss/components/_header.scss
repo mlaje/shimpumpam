@@ -1,4 +1,4 @@
-@use '../base/variables';
+@use '../base/variables' as *;
 
 .top-banner,
 .middle-header,
@@ -13,7 +13,7 @@
 
 /* Estilo para el banner de aviso superior */
 .top-banner {
-    background-color: variables.$topbannerbc;               /* Color de fondo del banner */
+    background-color: $topbannerbc;                       /* Color de fondo del banner */
     color: white;                                       /* Color del texto */
     text-align: center;                                   /* Centrar el texto */
     font-size: 12px;                                      /* Tamaño del texto */
@@ -23,7 +23,7 @@
 
 .middle-header {
     display: flex;                                          /* Uso de flex */
-    background-color: variables.$sitecolor;
+    background-color: $sitecolor;
     justify-content: space-between;
     width: 100%;     
 }
@@ -57,7 +57,7 @@
 
 .menunavegacionprincipal {
     text-align: center; 
-    background-color: variables.$sitecolor;
+    background-color: $sitecolor;
     ul {
         display: flex;              /* Hace que los <li> estén en línea */
         justify-content: center;    /* Centra los elementos horizontalmente */
@@ -73,7 +73,7 @@
         padding: 10px 20px;
         margin: 0 15px; 
         font-size: 30px; 
-        font-family: variables.$sitefont;
+        font-family: $sitefont;
         display: inline-block; 
         &:hover {
             background-color: rgb(255, 174, 139);  /* Cambia el fondo al pasar el mouse */
@@ -93,10 +93,9 @@
     width: 150px; 
     height: 40px; 
     font-size: 16px;
-    background-color: variables.$sitecolor;
-    font-family: variables.$sitefont;
+    background-color: $sitecolor;
+    font-family: $sitefont;
 }
-
 
 /* Media query para hacer el menú de navegación principal de la página que sea vertical en pantallas pequeñas */
 @media (max-width: 768px) {
@@ -136,4 +135,12 @@
         display: none;                  /* Oculta el botón en pantallas pequeñas */
     }
     
+}
+
+.degradetopbanner {
+    background-image: radial-gradient(ellipse, rgb(255, 144, 187), rgb(255, 112, 166) )
+}
+
+.degrademenuprincipal {
+    background-image: radial-gradient(circle, $sitecolor, rgb(255, 190, 126));
 }

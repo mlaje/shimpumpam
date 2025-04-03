@@ -1,4 +1,4 @@
-@use '../base/variables';
+@use '../base/variables' as *;
 
 /* Contenedor principal del formulario y los datos de contacto */
 .contact-section {
@@ -57,7 +57,7 @@
     background-color: #f9f9f9;                /* Color de fondo del formulario */
     border-radius: 8px;                         /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
-    font-family: variables.$sitefont;
+    font-family: $sitefont;
     max-width: 500px; 
     input[type="text"], textarea, input[type="submit"] {
         width: 80%;
@@ -70,7 +70,7 @@
 
 #formContacto input[type="submit"] {
     cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
-    background-color: variables.$sitecolor;        /* Color de fondo */
+    background-color: $sitecolor;        /* Color de fondo */
     color: white;                                 /* Color del texto */
     border: none;                                   /* Elimina el borde predeterminado */
     border-radius: 4px;                             /* Bordes redondeados */

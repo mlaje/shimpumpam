@@ -1,4 +1,4 @@
-@use '../base/variables';
+@use '../base/variables' as *;
 
 .carousel-inner {
     padding: 1em;
@@ -9,9 +9,9 @@
     display: inline-block;  /* Asegura que el botón respete el tamaño */
     width: 110px;
     height: 40px;    
-    font-family: variables.$sitefont; 
+    font-family: $sitefont; 
     font-size: 16px;
-    background-color: variables.$sitecolor;       
+    background-color: $sitecolor;       
     color: white;
     text-align: center;  
     line-height: 30px;                      /* Centra el texto verticalmente */
@@ -88,7 +88,7 @@
 .precio-original {
     font-size: large;
     font-weight: bold;
-    color: variables.$sitecolor; 
+    color: $sitecolor; 
 }
 
 
@@ -106,7 +106,7 @@
 
 .precio-descuento {
     font-size: medium;
-    color: variables.$sitecolor;     /*rgb(255, 80, 80);*/      /* Rojo */
+    color: $sitecolor;     /*rgb(255, 80, 80);*/      /* Rojo */
     font-weight: bold;
     span {
         font-size: small;
