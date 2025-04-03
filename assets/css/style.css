@@ -40,7 +40,6 @@
   /* margin-top: 0;  */ /* Eliminar cualquier margen superior */
   /* left: 0; */
 }
-
 .barra-navegacion ul {
   display: flex; /* Hace que los elementos de la lista se alineen en fila */
   align-items: center; /* Alinea verticalmente los elementos */
@@ -58,33 +57,15 @@
   text-align: center;
   background-color: rgb(255, 151, 112);
 }
-
 .menunavegacionprincipal ul {
   display: flex; /* Hace que los <li> estén en línea */
   justify-content: center; /* Centra los elementos horizontalmente */
   padding: 0;
   margin: 0;
 }
-
 .menunavegacionprincipal ul li {
   margin: 0 15px; /* Espaciado entre los elementos */
 }
-
-.menunavegacionprincipal a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 30px;
-  font-family: "Fredoka", serif;
-  display: inline-block; /* Asegura que los enlaces se muestren correctamente */
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .menunavegacionprincipal a {
   color: white;
   text-decoration: none;
@@ -94,9 +75,14 @@ nav ul {
   font-family: "Fredoka", serif;
   display: inline-block;
 }
-
 .menunavegacionprincipal a:hover {
   background-color: rgb(255, 174, 139); /* Cambia el fondo al pasar el mouse */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .temporada a {
@@ -252,7 +238,6 @@ footer {
   font-family: "Montserrat", serif;
   color: black;
 }
-
 footer p {
   margin: 10px 0;
 }
@@ -372,6 +357,21 @@ h3 {
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
 }
+.card .img-wrapper {
+  max-width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantiene la proporción sin recortar */
+}
+.card img {
+  max-height: 100%;
+}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -393,29 +393,11 @@ h3 {
     display: flex;
   }
 }
-.card .img-wrapper {
-  max-width: 100%;
-  height: 13em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card img {
-  max-height: 100%;
-}
-
 @media (max-width: 767px) {
   .card .img-wrapper {
     height: 17em;
   }
 }
-.card .img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Mantiene la proporción sin recortar */
-}
-
 .card-body {
   display: flex;
   flex-direction: column; /* título texto en columna */
@@ -440,7 +422,6 @@ h3 {
   margin-top: 10px; /* Espacio con respecto al texto */
   width: 100%; /* Ocupa el ancho disponible */
 }
-
 .boton-container a {
   text-decoration: none;
   display: inline-block; /* Asegura que los botones se comporten correctamente */
@@ -451,7 +432,6 @@ h3 {
   color: rgb(255, 151, 112); /*rgb(255, 80, 80);*/ /* Rojo */
   font-weight: bold;
 }
-
 .precio-descuento span {
   font-size: small;
   color: rgb(100, 100, 100); /* Gris */
@@ -468,29 +448,20 @@ h3 {
   margin: 0 auto; /* Centra la sección */
   padding: 20px;
 }
-
-/* Sección de datos de contacto (1/3 del ancho total) */
-.contact-section .contact-info {
+.contact-section .contact-info { /* Sección de datos de contacto (1/3 del ancho total) */
   width: 35%; /* Reduce para dar más espacio al formulario */
 }
-
-/* Sección del formulario (2/3 del ancho total) */
 .contact-section .contact-form {
   width: 65%; /* Ahora ocupa el doble que los datos de contacto */
 }
-
-/* Asegurar que el formulario use el 100% de su contenedor */
-.contact-section .contact-form form {
+.contact-section .contact-form form { /* Asegurar que el formulario use el 100% de su contenedor */
   display: flex;
   flex-direction: column;
   gap: 10px; /* Espacio entre los campos */
   width: 100%; /* Para que use todo el ancho disponible */
   max-width: 500px; /* Ajuste para evitar que se vea demasiado estrecho */
 }
-
-/* Estilo de inputs */
-.contact-section .contact-form input,
-.contact-section .contact-form textarea {
+.contact-section .contact-form input, .contact-section .contact-form textarea { /* Estilo de inputs */
   width: 100%; /* Ocupa el ancho completo del formulario */
   padding: 10px;
   border: 1px solid #ccc;
@@ -536,7 +507,6 @@ h3 {
 .formregistro {
   grid-area: formemail;
 }
-
 .formregistro form {
   display: flex;
   flex-direction: column; /* Acomoda los elementos en columna */
