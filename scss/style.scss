@@ -81,10 +81,9 @@
         font-size: 30px; 
         font-family: "Fredoka", serif;
         display: inline-block; 
-    }
-
-    a:hover {
-        background-color: rgb(255, 174, 139);  /* Cambia el fondo al pasar el mouse */
+        &:hover {
+            background-color: rgb(255, 174, 139);  /* Cambia el fondo al pasar el mouse */
+        }
     }
 }
 
@@ -126,7 +125,15 @@ nav ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
     font-family: "Fredoka", serif;
     max-width: 500px; 
+    input[type="text"], textarea, input[type="submit"] {
+        width: 80%;
+        padding: 10px;                                /* Añade un poco de relleno para hacerlo más fácil de escribir */
+        margin-bottom: 10px;                          /* Añade espacio entre los campos */
+        margin-left: 10%;                             /* Centra los elementos con respecto al formulario */
+        box-sizing: border-box;                       /* Asegura que el padding no afecte el ancho */
+    }
 }
+
 
 #formNewsletter {
     width: 90%;                                  /* Ajusta el ancho del formulario */
@@ -136,27 +143,15 @@ nav ul {
     border-radius: 8px;                          /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor */
     font-family: "Fredoka", serif; 
+    input[type="text"], input[type="submit"] {
+        width: 80%;
+        padding: 10px;                                 /* Añade un poco de relleno para hacerlo más fácil de escribir */
+        margin-bottom: 10px;                           /* Añade espacio entre los campos */
+        margin-left: 10%;                              /* Centra los elementos con respecto al formulario */
+        box-sizing: border-box;                        /* Asegura que el padding no afecte el ancho */
+    }
 }
 
-#formContacto input[type="text"], 
-#formContacto textarea, 
-#formContacto input[type="submit"] {
-    width: 80%;
-    padding: 10px;                                /* Añade un poco de relleno para hacerlo más fácil de escribir */
-    margin-bottom: 10px;                          /* Añade espacio entre los campos */
-    margin-left: 10%;                             /* Centra los elementos con respecto al formulario */
-    box-sizing: border-box;                       /* Asegura que el padding no afecte el ancho */
-}
-
-
-#formNewsletter input[type="text"], 
-#formNewsletter input[type="submit"] {
-    width: 80%;
-    padding: 10px;                                 /* Añade un poco de relleno para hacerlo más fácil de escribir */
-    margin-bottom: 10px;                           /* Añade espacio entre los campos */
-    margin-left: 10%;                              /* Centra los elementos con respecto al formulario */
-    box-sizing: border-box;                        /* Asegura que el padding no afecte el ancho */
-}
 
 #formContacto input[type="submit"] {
     cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
