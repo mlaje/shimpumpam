@@ -1,0 +1,19 @@
+# Archivos de logs
+*.log
+
+# Archivos de node.js
+node_modules/
+
+# Archivos de compilación
+/dist
+/build
+/public
+
+# variables de entorno
+.env
+
+# Archivos temporales de editro de texto
+.vscode/
+
+# Archivos y directorios de SO
+Thumbs.db       
