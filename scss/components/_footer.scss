@@ -9,12 +9,12 @@ footer {
     p {
         margin: 10px 0; 
     }
+    .copyright {
+        text-align: center;                             /* Centra el texto */
+        background-color: $sitecolor;                   /* Cambia el color de fondo */
+        padding: 5px 0;                                 /* Añade un poco de espacio en el interior */
+        color: white;                                 /* Cambia el color del texto a blanco */
+        font-size: 14px;                                /* Establece un tamaño de fuente adecuado */
+    }
 }
 
-.copyright {
-    text-align: center;                             /* Centra el texto */
-    background-color: $sitecolor;                   /* Cambia el color de fondo */
-    padding: 5px 0;                                 /* Añade un poco de espacio en el interior */
-    color: white;                                 /* Cambia el color del texto a blanco */
-    font-size: 14px;                                /* Establece un tamaño de fuente adecuado */
-}

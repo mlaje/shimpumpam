@@ -4,50 +4,90 @@
     padding: 1em;
 }
 
-
-.botonCompra {
-    display: inline-block;  /* Asegura que el botón respete el tamaño */
-    width: 110px;
-    height: 40px;    
-    font-family: $sitefont; 
-    font-size: 16px;
-    background-color: $sitecolor;       
-    color: white;
-    text-align: center;  
-    line-height: 30px;                      /* Centra el texto verticalmente */
-    border: none;                           /* Elimina cualquier borde predeterminado */
-    border-radius: 5px;                     /* Hace las esquinas redondeadas */
-    text-decoration: none;                  /* Elimina el subrayado del enlace */
-    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
-}
-
-.botonCompra:hover {
-    background-color: rgb(255, 130, 90);  /* Color más oscuro al pasar el mouse */
-}
-
 .card {
     margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
+
     .img-wrapper {
         max-width: 100%;
         height: 13em;
         display: flex;
         justify-content: center;
         align-items: center;
+        
         img {
             width: 100%;                    
             height: 100%;                   
             object-fit: contain;            /* Mantiene la proporción sin recortar */  
         }
-    } 
-    img {
-        max-height: 100%;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;         /* título texto en columna */
+        align-items: center;          
+        text-align: center;           
+      
+        .card-title {
+            font-size: large;
+        }
+
+        .precio-original {
+            font-size: large;
+            font-weight: bold;
+            color: $sitecolor; 
+        }
+
+        .precio-descuento {
+            font-size: medium;
+            color: $sitecolor;     /*rgb(255, 80, 80);*/      /* Rojo */
+            font-weight: bold;
+            
+            span {
+                font-size: small;
+                color: rgb(100, 100, 100);    /* Gris */
+                display: block;                 /* Lo coloca debajo del precio */
+                margin-top: 0px;
+            }
+        }
+
+        .boton-container {
+            display: flex;
+            justify-content: center;        /* Centra los botones horizontalmente */
+            gap: 10px;                      /* Espacio entre los botones */
+            margin-top: 10px;               /* Espacio con respecto al texto */
+            width: 100%;                    /* Ocupa el ancho disponible */
+            
+            a {
+                text-decoration: none;
+                display: inline-block;          /* Asegura que los botones se comporten correctamente */
+            }  
+
+            .botonCompra {
+                display: inline-block;  /* Asegura que el botón respete el tamaño */
+                width: 110px;
+                height: 40px;    
+                font-family: $sitefont; 
+                font-size: 16px;
+                background-color: $sitecolor;       
+                color: white;
+                text-align: center;  
+                line-height: 30px;                      /* Centra el texto verticalmente */
+                border: none;                           /* Elimina cualquier borde predeterminado */
+                border-radius: 5px;                     /* Hace las esquinas redondeadas */
+                text-decoration: none;                  /* Elimina el subrayado del enlace */
+                transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+                
+                &:hover {
+                    background-color: rgb(255, 130, 90);  /* Color más oscuro al pasar el mouse */
+                }
+            }          
+        }        
     }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
     background-color: #e1e1e1;
     width: 6vh;
     height: 6vh;
@@ -58,60 +98,18 @@
 
 @media (min-width: 768px) {
     .carousel-item {
-      margin-right: 0;
-      flex: 0 0 25%;
-      display: block;
+        margin-right: 0;
+        flex: 0 0 25%;
+        display: block;
     }
+
     .carousel-inner {
-      display: flex;
+        display: flex;
     }
 }
 
 @media (max-width: 767px) {
     .card .img-wrapper {
-      height: 17em;
-    }
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;         /* título texto en columna */
-    align-items: center;          
-    text-align: center;             
-}
-
-.card-title {
-    font-size: large;
-}
-
-
-.precio-original {
-    font-size: large;
-    font-weight: bold;
-    color: $sitecolor; 
-}
-
-
-.boton-container {
-    display: flex;
-    justify-content: center;        /* Centra los botones horizontalmente */
-    gap: 10px;                      /* Espacio entre los botones */
-    margin-top: 10px;               /* Espacio con respecto al texto */
-    width: 100%;                    /* Ocupa el ancho disponible */
-    a {
-        text-decoration: none;
-        display: inline-block;          /* Asegura que los botones se comporten correctamente */
-    }
-}
-
-.precio-descuento {
-    font-size: medium;
-    color: $sitecolor;     /*rgb(255, 80, 80);*/      /* Rojo */
-    font-weight: bold;
-    span {
-        font-size: small;
-        color: rgb(100, 100, 100);    /* Gris */
-        display: block;                 /* Lo coloca debajo del precio */
-        margin-top: 0px;
+        height: 17em;
     }
 }
