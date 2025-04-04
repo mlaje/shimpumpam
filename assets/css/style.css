@@ -241,6 +241,12 @@ footer .copyright {
   height: 100%;
   object-fit: contain; /* Mantiene la proporción sin recortar */
 }
+.card img {
+  transition: transform 0.3s ease; /* Suaviza el efecto de transformación */
+}
+.card:hover img {
+  transform: scale(1.2); /* Aumenta la imagen al hacer hover */
+}
 .card .card-body {
   display: flex;
   flex-direction: column; /* título texto en columna */

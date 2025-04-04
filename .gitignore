@@ -1,3 +1,4 @@
+# Git Ignore: se agrega para filtrar en caso que haya archivos o carpetas que no formen parte la web y no deban subir al repo
 # Archivos de logs
 *.log
 
@@ -12,7 +13,7 @@ node_modules/
 # variables de entorno
 .env
 
-# Archivos temporales de editro de texto
+# Archivos temporales del VS Code
 .vscode/
 
 # Archivos y directorios de SO
