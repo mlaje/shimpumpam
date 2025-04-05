@@ -11,6 +11,7 @@ Uso de Flexbox
 
 Uso de Bootstrap 
 - en index.html, babies.html y kids.html para mostrar un carousel de productos (se usa un script para darle movimiento)
+- en el header de todas las páginas con el menú hamburguesa
 
 Uso de media queries 
 - para acomodar el header de todas las páginas (ej: para hacer el menú de navegación principal de la página que sea vertical en pantallas pequeñas)
