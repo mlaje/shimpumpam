@@ -66,6 +66,14 @@
     }
 }
 
+.losmaselegidos {
+    transition: transform 0.3s ease;        /* Suaviza el efecto de transformación */
+    &:hover {
+        transform: scale(1.1);              /* Aumenta el texto del h2 al hacer hover */
+    }
+}
+
+
 /*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
 @media (max-width: 768px) {
     .envioynewsletter {

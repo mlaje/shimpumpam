@@ -21,6 +21,7 @@ Uso de media queries
 Animaciones
 - Animate style con el logo de la empresa
 - Gradiente radial para el top banner
+- Aumenta un 15% la imagen del producto al hacer hover 
 
 SASS
 - Uso de Live Sass compiler, creación de archivo style.scss y descomposición en varios archivos .scss, uso de variables y nesting 

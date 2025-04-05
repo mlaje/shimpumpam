@@ -228,6 +228,7 @@ footer .copyright {
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
+  overflow: hidden;
 }
 .card .img-wrapper {
   max-width: 100%;
@@ -245,7 +246,7 @@ footer .copyright {
   transition: transform 0.3s ease; /* Suaviza el efecto de transformación */
 }
 .card:hover img {
-  transform: scale(1.2); /* Aumenta la imagen al hacer hover */
+  transform: scale(1.15); /* Aumenta la imagen del producto al hacer hover */
 }
 .card .card-body {
   display: flex;
@@ -263,7 +264,7 @@ footer .copyright {
 }
 .card .card-body .precio-descuento {
   font-size: medium;
-  color: rgb(255, 151, 112); /*rgb(255, 80, 80);*/ /* Rojo */
+  color: rgb(255, 151, 112);
   font-weight: bold;
 }
 .card .card-body .precio-descuento span {
@@ -385,6 +386,13 @@ footer .copyright {
   text-align: center;
   gap: 10px;
   max-width: 400px;
+}
+
+.losmaselegidos {
+  transition: transform 0.3s ease; /* Suaviza el efecto de transformación */
+}
+.losmaselegidos:hover {
+  transform: scale(1.1); /* Aumenta el texto del h2 al hacer hover */
 }
 
 /*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
