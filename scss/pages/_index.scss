@@ -1,12 +1,17 @@
 @use '../base/variables' as *;
 
+.navbar {
+    background-color: $sitecolor !important;         /* Re-escribir color de fondo de la barra de navegación principal */
+}
+
+
 #formNewsletter {
-    width: 90%;                                  /* Ajusta el ancho del formulario */
-    margin: 40px auto;                           /* Centra el formulario */
+    width: 90%;                                       /* Ajusta el ancho del formulario */
+    margin: 40px auto;                                /* Centra el formulario */
     padding: 20px;
-    background-color: #f9f9f9;                 /* Color de fondo del formulario */
-    border-radius: 8px;                          /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor */
+    background-color: #f9f9f9;                      /* Color de fondo del formulario */
+    border-radius: 8px;                               /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);       /* Sombra suave alrededor */
     font-family: $sitefont;
     input[type="text"], input[type="submit"] {
         width: 80%;
@@ -19,19 +24,17 @@
 
 #formNewsletter input[type="submit"] {
     cursor: pointer;                                /* Cambia el cursor cuando el usuario pasa por encima */
-    background-color: $sitecolor;        /* Color de fondo */
+    background-color: $sitecolor;                   /* Color de fondo */
     color: white;                                 /* Color del texto */
     border: none;                                   /* Elimina el borde predeterminado */
     border-radius: 4px;                             /* Bordes redondeados */
     transition: background-color 0.3s ease;         /* Transición para el hover */
 }
 
-
 #correo {
     width: 100px;
     height: 50px;
 } 
-
 
 .envioynewsletter {
     display: grid;
@@ -40,7 +43,7 @@
     grid-template-areas:
         "correo email"
         "correo formemail";
-    gap: 10px; /* Espacio entre los elementos */
+    gap: 10px;                              /* Espacio entre los elementos */
     margin: 0 auto;
 }
 
@@ -48,7 +51,6 @@
 .mediosdeenvio {
     grid-area: correo;
 }
-
 
 .registrate {
     grid-area: email;
@@ -58,7 +60,7 @@
     grid-area: formemail;
     form {
         display: flex;
-        flex-direction: column;     /* Acomoda los elementos en columna */
+        flex-direction: column;             /* Acomoda los elementos en columna */
         align-items: center;        
         text-align: center;        
         gap: 10px;             
@@ -73,11 +75,10 @@
     }
 }
 
-
 /*  Media query para mostrar el area de envio, newsletter y formulario para registrar el mail de manera columnar  */
 @media (max-width: 768px) {
     .envioynewsletter {
-        grid-template-columns: 1fr;     /* Una sola columna */
+        grid-template-columns: 1fr;         /* Una sola columna */
         grid-template-rows: auto;       
         grid-template-areas:
             "correo"
@@ -86,6 +87,7 @@
     }
     .formregistro form {
         width: 100%;            
-        max-width: 500px;               /* Evitar que se vuelva demasiado grande en tablets */
+        max-width: 500px;                   /* Evitar que se vuelva demasiado grande en tablets */
     }
 }
+

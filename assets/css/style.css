@@ -327,6 +327,10 @@ footer .copyright {
     height: 17em;
   }
 }
+.navbar {
+  background-color: rgb(255, 151, 112) !important; /* Re-escribir color de fondo de la barra de navegación principal */
+}
+
 #formNewsletter {
   width: 90%; /* Ajusta el ancho del formulario */
   margin: 40px auto; /* Centra el formulario */
