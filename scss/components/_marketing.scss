@@ -1,0 +1,161 @@
+@use '../base/variables' as *;
+
+.marketing {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+
+  &.quienes-somos,
+  &.testimonios {
+    background-color: #fff;
+  }
+
+  .marketing-image {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+
+      .overlay-text {
+        font-family: $sitefont;
+        font-size: 30px;
+        color: rgb(255, 204, 102);
+        text-align: center;
+        transform: translateX(100%);
+        white-space: normal;
+        word-wrap: break-word;
+        padding: 0 10%;
+      }
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+
+      .overlay-text {
+        animation: slideIn 1s forwards;
+      }
+    }
+  }
+
+  .marketing-info {
+    width: 50%;
+    font-family: $sitefont;
+    color: #333;
+    padding: 20px;
+    text-align: left;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    &.full-width {
+      padding: 0 5vw;
+    }
+  }
+}
+
+
+// Animación de texto en overlay
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// Animación de imagen para testimonios
+.testimonios .marketing-image {
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  animation: cambioImagen 16s infinite;
+  img {
+    display: none;
+  }
+}
+
+// Cambio de imagen (madres)
+@keyframes cambioImagen {
+  0% {
+    background-image: url('../img/madre_feliz_1.jpg');
+  }
+  25% {
+    background-image: url('../img/madre_feliz_2.jpg');
+  }
+  50% {
+    background-image: url('../img/madre_feliz_3.jpg');
+  }
+  75% {
+    background-image: url('../img/madre_feliz_4.jpg');
+  }  
+  100% {
+    background-image: url('../img/madre_feliz_1.jpg');
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .marketing {
+    flex-direction: column;
+
+    .marketing-image,
+    .marketing-info {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .marketing-image {
+      height: 250px; // Ajustamos para móvil
+      margin-right: 0;
+    }
+
+    .marketing-info {
+      padding: 0 5vw;
+      text-align: left;
+
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .overlay-text {
+      font-size: 18px;
+      padding: 0 5vw;
+    }
+  }
+}

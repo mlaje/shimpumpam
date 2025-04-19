@@ -1,4 +1,13 @@
 @charset "UTF-8";
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3 {
   font-family: "Fredoka", serif; /* Mantiene la fuente personalizada */
   font-weight: bold; /* Recupera el estilo en negrita */
@@ -327,6 +336,147 @@ footer .copyright {
     height: 17em;
   }
 }
+.marketing {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+.marketing.quienes-somos, .marketing.testimonios {
+  background-color: #fff;
+}
+.marketing .marketing-image {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.marketing .marketing-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.marketing .marketing-image .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.marketing .marketing-image .overlay .overlay-text {
+  font-family: "Fredoka", serif;
+  font-size: 30px;
+  color: rgb(255, 204, 102);
+  text-align: center;
+  transform: translateX(100%);
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 0 10%;
+}
+.marketing .marketing-image:hover .overlay {
+  opacity: 1;
+}
+.marketing .marketing-image:hover .overlay .overlay-text {
+  animation: slideIn 1s forwards;
+}
+.marketing .marketing-info {
+  width: 50%;
+  font-family: "Fredoka", serif;
+  color: #333;
+  padding: 20px;
+  text-align: left;
+}
+.marketing .marketing-info h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.marketing .marketing-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.marketing .marketing-info.full-width {
+  padding: 0 5vw;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.testimonios .marketing-image {
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  animation: cambioImagen 16s infinite;
+}
+.testimonios .marketing-image img {
+  display: none;
+}
+
+@keyframes cambioImagen {
+  0% {
+    background-image: url("../img/madre_feliz_1.jpg");
+  }
+  25% {
+    background-image: url("../img/madre_feliz_2.jpg");
+  }
+  50% {
+    background-image: url("../img/madre_feliz_3.jpg");
+  }
+  75% {
+    background-image: url("../img/madre_feliz_4.jpg");
+  }
+  100% {
+    background-image: url("../img/madre_feliz_1.jpg");
+  }
+}
+@media (max-width: 768px) {
+  .marketing {
+    flex-direction: column;
+  }
+  .marketing .marketing-image,
+  .marketing .marketing-info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .marketing .marketing-image {
+    height: 250px;
+    margin-right: 0;
+  }
+  .marketing .marketing-info {
+    padding: 0 5vw;
+    text-align: left;
+  }
+  .marketing .marketing-info h2 {
+    text-align: center;
+  }
+  .marketing .marketing-info p {
+    font-size: 16px;
+  }
+  .marketing .overlay-text {
+    font-size: 18px;
+    padding: 0 5vw;
+  }
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Previene el desplazamiento horizontal */
+  margin: 0; /* Sin márgenes que provoquen el overflow */
+  padding: 0; /* Sin relleno adicional */
+}
+
 .navbar {
   background-color: rgb(255, 151, 112) !important; /* Re-escribir color de fondo de la barra de navegación principal */
 }

@@ -1,5 +1,12 @@
 @use '../base/variables' as *;
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;                             /* Previene el desplazamiento horizontal */
+    margin: 0;                                      /* Sin márgenes que provoquen el overflow */
+    padding: 0;                                     /* Sin relleno adicional */
+}
+
 .navbar {
     background-color: $sitecolor !important;         /* Re-escribir color de fondo de la barra de navegación principal */
 }

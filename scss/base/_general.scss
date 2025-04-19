@@ -1,5 +1,15 @@
 @use './variables' as *;
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+  
+
 h1, h2, h3 {
     font-family: $sitefont;             /* Mantiene la fuente personalizada */
     font-weight: bold;                  /* Recupera el estilo en negrita */
