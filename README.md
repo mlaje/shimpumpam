@@ -12,6 +12,7 @@ Uso de Flexbox
 Uso de Bootstrap 
 - en index.html, babies.html y kids.html para mostrar un carousel de productos (se usa un script para darle movimiento)
 - en el header de todas las páginas con el menú hamburguesa
+- Se agrega un Toast Notification en la entrega final cuando se envía un pedido de suscripción de una cuenta de mail al newsletter
 
 Uso de media queries 
 - para acomodar el header de todas las páginas (ej: para hacer el menú de navegación principal de la página que sea vertical en pantallas pequeñas)
@@ -26,4 +27,14 @@ Animaciones
 
 SASS
 - Uso de Live Sass compiler, creación de archivo style.scss y descomposición en varios archivos .scss, uso de variables y nesting 
+
+SEO
+- Se agrega en todas las páginas (meta descriptions y meta keywords)
+
+Mas contenido
+- Se agrega más contenido en la página Index (con fotos, quienes somos en la empresa, testimonios y mapa con la ubicación de la sucursal)
+
+
+
+
 

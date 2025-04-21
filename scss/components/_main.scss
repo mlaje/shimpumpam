@@ -1,5 +1,9 @@
 @use '../base/variables' as *;
 
+.temporada {
+    padding-left: 5px;          // espacio a izquierda de las temporadas (verano, invierno)
+} 
+
 .temporada a {
     color: $sitecolor;
     text-decoration: none;    
