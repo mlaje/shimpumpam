@@ -195,7 +195,7 @@ label {
 }
 
 footer {
-  background-color: #f1f1f1;
+  background-color: #f8f8f8;
   padding: 20px 0;
   text-align: left;
   font-family: "Montserrat", serif;
@@ -204,16 +204,74 @@ footer {
 footer p {
   margin: 10px 0;
 }
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+@media (max-width: 992px) {
+  footer .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+footer .footer-item {
+  padding: 1rem;
+}
+footer .footer-item h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+footer .footer-item p {
+  margin: 0.5rem 0;
+}
+footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+footer .social-icons img:hover {
+  transform: scale(1.1);
+}
+footer #correo {
+  width: 100px;
+  height: auto;
+  margin-top: 0;
+}
 footer .copyright {
-  text-align: center; /* Centra el texto */
-  background-color: rgb(255, 151, 112); /* Cambia el color de fondo */
-  padding: 5px 0; /* Añade un poco de espacio en el interior */
-  color: white; /* Cambia el color del texto a blanco */
-  font-size: 14px; /* Establece un tamaño de fuente adecuado */
+  text-align: center;
+  background-color: rgb(255, 151, 112);
+  padding: 5px 0;
+  color: white;
+  font-size: 14px;
+  margin-top: 2rem;
+}
+footer .logo-footer img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+footer .logo-footer img:hover {
+  transform: scale(1.05);
 }
 
 #formFiltroPrecio {
-  padding-left: 20px; /* Ajusta el valor según lo necesites */
+  padding-left: 20px; /* Padding a la izquierda para el form */
 }
 
 .filtroPrecio h3 {
@@ -540,15 +598,18 @@ html, body {
   height: 50px;
 }
 
+/*
 .envioynewsletter {
-  display: grid;
-  grid-template-rows: 100px 200px;
-  grid-template-columns: 15% 85%;
-  grid-template-areas: "correo email" "correo formemail";
-  gap: 10px; /* Espacio entre los elementos */
-  margin: 0 auto;
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 15% 85%; 
+    grid-template-areas:
+        "correo email"
+        "correo formemail";
+    gap: 10px;                              
+    margin: 0 auto;
 }
-
+*/
 /* Asignar las áreas de la grilla */
 .mediosdeenvio {
   grid-area: correo;
@@ -556,6 +617,7 @@ html, body {
 
 .registrate {
   grid-area: email;
+  margin-top: 25px;
 }
 
 .formregistro {

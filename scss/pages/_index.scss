@@ -42,7 +42,7 @@ html, body {
     width: 100px;
     height: 50px;
 } 
-
+/*
 .envioynewsletter {
     display: grid;
     grid-template-rows: 100px 200px;
@@ -50,17 +50,20 @@ html, body {
     grid-template-areas:
         "correo email"
         "correo formemail";
-    gap: 10px;                              /* Espacio entre los elementos */
+    gap: 10px;                              
     margin: 0 auto;
 }
+*/
 
 /* Asignar las áreas de la grilla */
 .mediosdeenvio {
     grid-area: correo;
+    //margin: 10px;
 }
 
 .registrate {
     grid-area: email;
+    margin-top: 25px;
 }
 
 .formregistro {

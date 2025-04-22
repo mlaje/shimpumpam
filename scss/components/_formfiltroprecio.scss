@@ -1,11 +1,11 @@
 @use '../base/variables' as *;
 
-#formFiltroPrecio {
-    padding-left: 20px;  /* Ajusta el valor según lo necesites */
+#formFiltroPrecio {             
+    padding-left: 20px;             /* Padding a la izquierda para el form */
 }
 
 .filtroPrecio h3 {
-    padding-left: 20px;  /* Padding a la izquierda para el h3 */
+    padding-left: 20px;             /* Padding a la izquierda para el h3 */
     font-family: $sitefont;
     font-size: 25px;
     color: $sitecolor;

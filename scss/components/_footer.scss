@@ -1,20 +1,88 @@
 @use '../base/variables' as *;
 
 footer {
-    background-color: #f1f1f1; 
-    padding: 20px 0; 
-    text-align: left; 
-    font-family: $siteparagraphfont;
-    color: black; 
-    p {
-        margin: 10px 0; 
-    }
-    .copyright {
-        text-align: center;                             /* Centra el texto */
-        background-color: $sitecolor;                   /* Cambia el color de fondo */
-        padding: 5px 0;                                 /* Añade un poco de espacio en el interior */
-        color: white;                                 /* Cambia el color del texto a blanco */
-        font-size: 14px;                                /* Establece un tamaño de fuente adecuado */
-    }
-}
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: left;
+  font-family: $siteparagraphfont;
+  color: black;
 
+  p {
+    margin: 10px 0;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  // 4 columnas (Contacto, Redes Sociales, Punto de Venta, Medios de envío)
+    align-items: start;                     // Alinea los contenidos al tope de cada columna
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr); // 2 columnas en tablet
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;            // 1 columna en móvil
+      text-align: center;
+    }
+  }
+
+  .footer-item {
+    padding: 1rem;
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  #correo {
+    width: 100px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .copyright {
+    text-align: center;
+    background-color: $sitecolor;
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+    margin-top: 2rem;
+  }
+
+  .logo-footer img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.05);               // efecto al pasar el mouse
+    }
+  }
+  
+}
