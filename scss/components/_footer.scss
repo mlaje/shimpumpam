@@ -1,88 +1,87 @@
 @use '../base/variables' as *;
 
 footer {
-  background-color: #f8f8f8;
-  padding: 20px 0;
-  text-align: left;
-  font-family: $siteparagraphfont;
-  color: black;
-
-  p {
-    margin: 10px 0;
-  }
-
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  // 4 columnas (Contacto, Redes Sociales, Punto de Venta, Medios de envío)
-    align-items: start;                     // Alinea los contenidos al tope de cada columna
-    gap: 2rem;
-    margin-top: 2rem;
+    background-color: #f8f8f8;
+    padding: 20px 0;
     text-align: left;
-
-    @media (max-width: 992px) {
-      grid-template-columns: repeat(2, 1fr); // 2 columnas en tablet
-    }
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;            // 1 columna en móvil
-      text-align: center;
-    }
-  }
-
-  .footer-item {
-    padding: 1rem;
-
-    h3 {
-      margin-bottom: 1rem;
-      font-size: 1.2rem;
-    }
+    font-family: $siteparagraphfont;
+    color: black;
 
     p {
-      margin: 0.5rem 0;
+        margin: 10px 0;
     }
-  }
 
-  .social-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    justify-content: flex-start;
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  // 4 columnas (Contacto, Redes Sociales, Punto de Venta, Medios de envío)
+        align-items: start;                     // Alinea los contenidos al tope de cada columna
+        gap: 2rem;
+        margin-top: 2rem;
+        text-align: left;
 
-    img {
-      width: 40px;
-      height: 40px;
-      transition: transform 0.3s ease;
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr); // 2 columnas en tablet
+        }
 
-      &:hover {
-        transform: scale(1.1);
-      }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;            // 1 columna en móvil
+            text-align: center;
+        }
     }
-  }
 
-  #correo {
-    width: 100px;
-    height: auto;
-    margin-top: 0;
-  }
+    .footer-item {
+        padding: 1rem;
 
-  .copyright {
-    text-align: center;
-    background-color: $sitecolor;
-    padding: 5px 0;
-    color: white;
-    font-size: 14px;
-    margin-top: 2rem;
-  }
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
 
-  .logo-footer img {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px; 
-    transition: transform 0.3s ease;
-  
-    &:hover {
-      transform: scale(1.05);               // efecto al pasar el mouse
+        p {
+            margin: 0.5rem 0;
+        }
     }
-  }
-  
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    #correo {
+        width: 100px;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .copyright {
+        text-align: center;
+        background-color: $sitecolor;
+        padding: 5px 0;
+        color: white;
+        font-size: 14px;
+        margin-top: 2rem;
+    }
+
+    .logo-footer img {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px; 
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);               // efecto al pasar el mouse
+        }
+    }
 }
